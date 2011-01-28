@@ -10,6 +10,8 @@ function Despacho() {
   const [selectedItems, setSelectedItems] = useState([])
   const [check, setCheck] = useState(false)
 
+  console.log(check)
+
   let location = useLocation()
 
   const {nombre_bodega = "", cliente = "", id_number = "", stock = ""} = location.state?.bodega || {}
