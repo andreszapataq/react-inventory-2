@@ -1,7 +1,12 @@
+import {FaSearch} from 'react-icons/fa'
+
 const SearchBar = () => {
   return (
-    <form className="p-6 flex justify-center">
-        <input className="block w-1/2 border border-gray-300 rounded-md p-2 pl-7" type="text" placeholder="Buscar bodega" />
+    <form className="w-1/2 pb-10">
+      <div className="flex flex-row items-center px-4 py-2 border border-slate-400 rounded-lg focus-within:border-blue-700 focus-within:border-2">
+        <FaSearch className="fill-gray-400 mr-2" />
+        <input className="w-full border-none outline-none" type="text" placeholder="Buscar bodega" />
+      </div>
     </form>
   )
 }

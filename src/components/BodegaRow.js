@@ -1,12 +1,8 @@
 const BodegaRow = () => {
   return (
-    <div className="p-6 flex flex-col justify-center">
-      <div className="bodega-title">
-        <h2>Principal</h2>
-      </div>
-      <div className="cliente-title">
-        <p>Vive Solutions - 900274934</p>
-      </div>
+    <div className="w-1/2">
+        <h2 className="font-semibold text-lg">Principal</h2>
+        <p className="font-light text-xs">Vive Solutions - 900274934</p>
     </div>
   )
 }

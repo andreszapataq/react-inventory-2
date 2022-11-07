@@ -1,13 +1,13 @@
 import Header from "./layout/Header";
 import SearchBar from "./components/SearchBar";
-import BodegaRow from "./components/BodegaRow";
+import ItemContainer from "./components/ItemContainer"
 
 function App() {
   return (
-    <div className="App flex-column">
+    <div className="flex flex-col items-center">
       <Header />
       <SearchBar />
-      <BodegaRow />
+      <ItemContainer />
     </div>
   );
 }
