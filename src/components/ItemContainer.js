@@ -1,8 +1,14 @@
 import BodegaRow from "./BodegaRow"
 
-function ItemContainer() {
+function ItemContainer({data}) {
   return (
-    <BodegaRow />
+    <div className="w-1/2">
+      {data.map((bodega, index) => (
+        <div key={index}>
+          <BodegaRow bodega={bodega} />
+        </div>
+      ))}
+    </div>
   )
 }
 
