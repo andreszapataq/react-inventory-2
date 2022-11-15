@@ -1,7 +1,11 @@
+import { useParams } from "react-router-dom"
+
 function Bodega() {
+  const params = useParams()
+  
   return (
     <div>
-        Bodega
+        Bodega {params.id}
     </div>
   )
 }
