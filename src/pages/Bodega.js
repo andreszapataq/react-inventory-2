@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom"
+import ItemRow from "../components/ItemRow"
 
 function Bodega() {
   const params = useParams()
@@ -6,6 +7,7 @@ function Bodega() {
   return (
     <div>
         Bodega {params.id}
+        <ItemRow />
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import ItemContainer from "../layout/ItemContainer"
 
-function Bodegas({data}) {
+function Bodegas({bodegas}) {
   return (
     <div className="w-3/5 lg:w-1/2">
-        <ItemContainer data={data} />
+        <ItemContainer bodegas={bodegas} />
     </div>
   )
 }

@@ -2,10 +2,10 @@ import { Link } from "react-router-dom"
 
 import BodegaRow from "../components/BodegaRow"
 
-function ItemContainer({data}) {
+function ItemContainer({bodegas}) {
   return (
     <div>
-      {data.map((bodega, index) => (
+      {bodegas.map((bodega, index) => (
         <div key={index}>
           <Link to={`/bodega/${index}`}>
             <BodegaRow bodega={bodega} />

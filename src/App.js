@@ -15,7 +15,7 @@ function App() {
           <Header />
           <SearchBar />
           <Routes>
-            <Route path="/" element={<Bodegas data={BODEGAS} />} />
+            <Route path="/" element={<Bodegas bodegas={BODEGAS} />} />
             <Route path="/bodega/:id" element={<Bodega />} />
           </Routes>
         </div>
