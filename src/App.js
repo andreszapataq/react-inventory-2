@@ -9,18 +9,16 @@ import {BODEGAS} from './data'
 
 function App() {
   return (
-    <>
-      <Router basename="/bodegas">
-        <div className="flex flex-col items-center">
-          <Header />
-          <SearchBar />
-          <Routes>
-            <Route path="/" element={<Bodegas bodegas={BODEGAS} />} />
-            <Route path="/bodega/:id" element={<Bodega />} />
-          </Routes>
-        </div>
-      </Router>
-    </>
+    <Router basename="/bodegas">
+      <div className="flex flex-col items-center">
+        <Header />
+        <SearchBar />
+        <Routes>
+          <Route path="/" element={<Bodegas bodegas={BODEGAS} />} />
+          <Route path="/bodega/:id" element={<Bodega />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
