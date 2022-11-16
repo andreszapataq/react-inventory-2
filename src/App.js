@@ -9,7 +9,7 @@ import {BODEGAS} from './data'
 
 function App() {
   return (
-    <Router>
+    <Router basename={`${process.env.NODE_ENV === 'production' ? '/bodegas' : ''}`}>
       <div className="flex flex-col items-center">
         <Header />
         <SearchBar />
