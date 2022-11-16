@@ -9,7 +9,7 @@ import {BODEGAS} from './data'
 
 function App() {
   return (
-    <Router basename="/bodegas">
+    <Router>
       <div className="flex flex-col items-center">
         <Header />
         <SearchBar />
