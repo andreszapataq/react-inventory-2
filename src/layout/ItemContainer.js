@@ -1,17 +1,7 @@
-import { Link } from "react-router-dom"
-
-import BodegaRow from "../components/BodegaRow"
-
-function ItemContainer({bodegas}) {
+function ItemContainer({children}) {
   return (
-    <div>
-      {bodegas.map((bodega, index) => (
-        <div key={index}>
-          <Link to={`/bodega/${index}`}>
-            <BodegaRow bodega={bodega} />
-          </Link>
-        </div>
-      ))}
+    <div className="w-3/5 lg:w-1/2">
+      {children}
     </div>
   )
 }
