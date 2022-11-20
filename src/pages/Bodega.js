@@ -1,14 +1,15 @@
 import { useParams } from "react-router-dom"
 import ItemContainer from "../layout/ItemContainer"
+import ItemRow from "../components/ItemRow"
 
 function Bodega() {
   const params = useParams()
   
   return (
-    <div>
-        Bodega {params.id}
-        <ItemContainer />
-    </div>
+    <ItemContainer>
+      Bodega {params.id}
+      <ItemRow />
+    </ItemContainer>
   )
 }
 

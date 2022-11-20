@@ -1,7 +1,7 @@
 const ItemRow = () => {
   return (
     <div>
-        Nuevo
+      ItemRow
     </div>
   )
 }
