@@ -7,7 +7,7 @@ function Bodegas({bodegas}) {
     <ItemContainer>
       {bodegas.map((bodega, index) => (
       <div key={index}>
-        <Link to={`/bodega/${index}`}>
+        <Link to={`/bodega/${index}`} state={{bodega}}>
           <BodegaRow bodega={bodega} />
         </Link>
       </div>
