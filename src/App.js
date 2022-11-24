@@ -6,6 +6,7 @@ import Bodegas from "./pages/Bodegas";
 import Bodega from "./pages/Bodega"
 
 import {BODEGAS} from './data'
+import {REFERENCIAS} from './data'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <SearchBar />
         <Routes>
           <Route path="/" element={<Bodegas bodegas={BODEGAS} />} />
-          <Route path="/bodega/:id" element={<Bodega />} />
+          <Route path="/bodega/:id" element={<Bodega referencias={REFERENCIAS} />} />
         </Routes>
       </div>
     </Router>

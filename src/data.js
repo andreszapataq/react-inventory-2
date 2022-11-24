@@ -12,3 +12,22 @@ export const BODEGAS = [
         cliente: 'Megatecnología y Rehabilitación Colombiana - 900094992'
     }
 ]
+
+export const REFERENCIAS = [
+    {
+        codigo: 'AT677FD',
+        nombre: 'DBM Putty 1.00 CC'
+    },
+    {
+        codigo: 'AT678FD',
+        nombre: 'DBM Putty 2.50 CC'
+    },
+    {
+        codigo: 'AT679FD',
+        nombre: 'DBM Putty 5.00 CC'
+    },
+    {
+        codigo: 'AT680FD',
+        nombre: 'DBM Putty 10.0 CC'
+    }
+]

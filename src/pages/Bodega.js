@@ -1,7 +1,9 @@
 import ItemContainer from "../layout/ItemContainer"
 import ItemRow from "../components/ItemRow"
 
-function Bodega() {
+function Bodega({referencias}) {
+  console.log(referencias)
+
   return (
     <ItemContainer>
       <ItemRow />
