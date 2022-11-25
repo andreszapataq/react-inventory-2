@@ -12,7 +12,8 @@ module.exports = {
         'cerulean-blue': '#1155CB',
         'platinum': '#EBEBEB',
         'battleship-grey': '#868686',
-        'cool-grey': '#8F95B2'
+        'cool-grey': '#8F95B2',
+        'light-gray': '#D6D6D6'
       }
     },
   },
