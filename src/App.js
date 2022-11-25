@@ -4,9 +4,10 @@ import Header from "./layout/Header";
 import SearchBar from "./components/SearchBar";
 import Bodegas from "./pages/Bodegas";
 import Bodega from "./pages/Bodega"
+import Lotes from "./pages/Lotes"
 
 import {BODEGAS} from './data'
-import {REFERENCIAS} from './data'
+import {INVENTARIO} from './data'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <SearchBar />
         <Routes>
           <Route path="/" element={<Bodegas bodegas={BODEGAS} />} />
-          <Route path="/bodega/:id" element={<Bodega referencias={REFERENCIAS} />} />
+          <Route path="/bodega/:id" element={<Bodega inventario={INVENTARIO} />} />
+          <Route path="/lotes/:id" element={<Lotes />} />
         </Routes>
       </div>
     </Router>

@@ -13,21 +13,25 @@ export const BODEGAS = [
     }
 ]
 
-export const REFERENCIAS = [
+export const INVENTARIO = [
     {
         codigo: 'AT677FD',
-        nombre: 'DBM Putty 1.00 CC'
+        nombre: 'DBM Putty 1.00 CC',
+        cantidad: 11
     },
     {
         codigo: 'AT678FD',
-        nombre: 'DBM Putty 2.50 CC'
+        nombre: 'DBM Putty 2.50 CC',
+        cantidad: 7
     },
     {
         codigo: 'AT679FD',
-        nombre: 'DBM Putty 5.00 CC'
+        nombre: 'DBM Putty 5.00 CC',
+        cantidad: 15
     },
     {
         codigo: 'AT680FD',
-        nombre: 'DBM Putty 10.0 CC'
+        nombre: 'DBM Putty 10.0 CC',
+        cantidad: 22
     }
 ]

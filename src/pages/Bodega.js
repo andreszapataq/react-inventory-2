@@ -1,12 +1,19 @@
+import { Link } from "react-router-dom"
 import ItemContainer from "../layout/ItemContainer"
 import ItemRow from "../components/ItemRow"
 
-function Bodega({referencias}) {
-  console.log(referencias)
+function Bodega({inventario}) {
+  console.log(inventario)
 
   return (
     <ItemContainer>
-      <ItemRow />
+      {inventario.map((referencia, index) => (
+      <div key={index}>
+        <Link to={`/lotes/${index}`}>
+          <ItemRow referencia={referencia} />
+        </Link>
+      </div>
+      ))}
     </ItemContainer>
   )
 }

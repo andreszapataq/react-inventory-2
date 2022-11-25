@@ -1,7 +1,7 @@
 function Lote() {
   return (
     <div>
-        
+        Lote
     </div>
   )
 }
