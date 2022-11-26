@@ -1,4 +1,8 @@
+import { useLocation } from "react-router-dom"
+
 const ItemRow = ({referencia}) => {
+  let location = useLocation()
+
   return (
     <div className="flex justify-between bg-cultured rounded-lg px-8 py-4 mb-4">
       <div>
