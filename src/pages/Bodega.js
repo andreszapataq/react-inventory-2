@@ -3,13 +3,11 @@ import ItemContainer from "../layout/ItemContainer"
 import ItemRow from "../components/ItemRow"
 
 function Bodega({inventario}) {
-  console.log(inventario)
-
   return (
     <ItemContainer>
       {inventario.map((referencia, index) => (
       <div key={index}>
-        <Link to={`/lotes/${index}`}>
+        <Link to={`/lotes/${index}`} state={{referencia}}>
           <ItemRow referencia={referencia} />
         </Link>
       </div>

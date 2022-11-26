@@ -8,6 +8,7 @@ import Lotes from "./pages/Lotes"
 
 import {BODEGAS} from './data'
 import {INVENTARIO} from './data'
+import {LOTES} from './data'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Bodegas bodegas={BODEGAS} />} />
           <Route path="/bodega/:id" element={<Bodega inventario={INVENTARIO} />} />
-          <Route path="/lotes/:id" element={<Lotes />} />
+          <Route path="/lotes/:id" element={<Lotes lotes={LOTES} />} />
         </Routes>
       </div>
     </Router>
