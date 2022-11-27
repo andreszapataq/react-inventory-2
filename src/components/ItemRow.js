@@ -6,7 +6,7 @@ const ItemRow = ({referencia, lote}) => {
   return (
     <div>
       {location.pathname.includes('/bodega') && (
-        <div className="flex justify-between bg-cultured rounded-lg px-8 py-4 mb-4">
+        <div className="flex justify-between items-center bg-cultured rounded-lg px-8 py-4 mb-4 h-20">
           <div>
             <h2 className="text-lg font-semibold">{referencia.nombre}</h2>
             <p className="text-xs font-light">{referencia.codigo}</p>
@@ -18,7 +18,7 @@ const ItemRow = ({referencia, lote}) => {
         </div>
       )}
       {location.pathname.includes('/lotes') && (
-        <div className="flex justify-between bg-cultured rounded-lg px-8 py-4 mb-4">
+        <div className="flex justify-between items-center bg-cultured rounded-lg px-8 py-4 mb-4 h-20">
           <div>
             <h2 className="text-lg font-semibold">{lote.lote}</h2>
             <p></p>
