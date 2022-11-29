@@ -13,7 +13,8 @@ module.exports = {
         'platinum': '#EBEBEB',
         'battleship-grey': '#868686',
         'cool-grey': '#8F95B2',
-        'light-gray': '#D6D6D6'
+        'light-gray': '#D6D6D6',
+        'cadet-blue-crayola': '#B3B5C2'
       }
     },
   },
