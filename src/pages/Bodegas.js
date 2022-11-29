@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import ItemContainer from "../layout/ItemContainer"
+import ItemContainer from "../components/ItemContainer"
 import BodegaRow from "../components/BodegaRow"
 
 function Bodegas({bodegas}) {
