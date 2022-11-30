@@ -4,12 +4,21 @@ import LoteLog from "../components/LoteLog"
 const SecondaryLayout = () => {
   return (
     <div>
-      <DropdownSearch />
+      <div>
+        <p>Bodega actual</p>
+      </div>
+      <div>
+        <p>Trasladar a</p>
+        <DropdownSearch />
+      </div>
       <div>
         <p>Notas</p>
-        <textarea name="notes" id="notes" className="max-w-md border border-cadet-blue-crayola rounded-lg"></textarea>
+        <textarea name="notes" id="notes" className="resize-none w-[461px] h-[104px] border border-cadet-blue-crayola rounded-lg"></textarea>
       </div>
-      <LoteLog />
+      <div>
+        <p>Registro</p>
+        <LoteLog />
+      </div>
     </div>
   )
 }

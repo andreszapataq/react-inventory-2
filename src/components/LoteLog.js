@@ -1,8 +1,6 @@
 const LoteLog = () => {
   return (
-    <textarea name="" id="" cols="30" rows="10">
-        LoteLog
-    </textarea>
+    <textarea name="log" id="log" className="resize-none w-[461px] h-[246px] border border-cadet-blue-crayola rounded-lg"></textarea>
   )
 }
 
