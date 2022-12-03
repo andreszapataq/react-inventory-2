@@ -1,32 +1,33 @@
+import HeaderLote from "../components/HeaderLote"
 import DropdownSearch from "../components/DropdownSearch"
 import LoteLog from "../components/LoteLog"
+import Button from "../components/Button"
 
 const SecondaryLayout = () => {
   return (
     <div className="p-8">
-      <div>
-      <h1 className="text-3xl font-semibold">Lote No.</h1>
-      <p className="text-xl">Fecha de Vencimiento</p>
-      <div className="w-full h-px bg-cadet-blue-crayola mr-8"></div>
-      </div>
-      <div className="grid grid-rows-5 gap-11">
+      <div className="grid grid-flow-row auto-rows-max gap-11">
+        <HeaderLote />
         <div>
-          <p>Bodega actual</p>
+          <h2 className="text-2xl font-medium">Bodega actual</h2>
+          <p className="text-lg font-semibold">Hospital San José</p>
+          <p className="text-xs font-light">Hospital San José de Popayán E.S.E. - 891580002</p>
         </div>
         <div>
-          <p>Trasladar a</p>
+          <h2 className="text-2xl font-medium">Trasladar a</h2>
           <DropdownSearch />
         </div>
         <div>
-          <p>Notas</p>
+          <h2 className="text-2xl font-medium">Notas</h2>
           <textarea name="notes" id="notes" className="resize-none w-[461px] h-[104px] px-2 py-1 border border-cadet-blue-crayola rounded-lg"></textarea>
         </div>
         <div>
-          <p>Registro</p>
+          <h2 className="text-2xl font-medium">Registro</h2>
           <LoteLog />
         </div>
         <div>
-          Buttons
+          <Button variant="cancel" />
+          <Button variant="save" />
         </div>
       </div>
     </div>
