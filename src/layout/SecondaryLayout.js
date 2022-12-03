@@ -25,9 +25,9 @@ const SecondaryLayout = () => {
           <h2 className="text-2xl font-medium">Registro</h2>
           <LoteLog />
         </div>
-        <div>
-          <Button variant="cancel" />
-          <Button variant="save" />
+        <div className="w-[461px] flex gap-4">
+          <Button variant="cancel" label="Cancelar" />
+          <Button variant="confirm" label="Guardar" />
         </div>
       </div>
     </div>

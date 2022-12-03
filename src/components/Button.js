@@ -1,7 +1,7 @@
-const Button = ({cancel, save}) => {
+const Button = ({variant, label}) => {
   return (
-    <button className="w-[149px] h-[42px] bg-cerulean-blue rounded-lg">
-        Guardar
+    <button className={`btn-${variant}`}>
+      {label}
     </button>
   )
 }
