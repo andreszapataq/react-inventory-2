@@ -19,7 +19,7 @@ const SecondaryLayout = () => {
         </div>
         <div>
           <h2 className="text-2xl font-medium">Notas</h2>
-          <textarea name="notes" id="notes" className="resize-none w-[461px] h-[104px] px-2 py-1 border border-cadet-blue-crayola rounded-lg"></textarea>
+          <textarea name="notes" id="notes" className="resize-none w-[461px] h-[104px] px-2 py-1 border border-cadet-blue-crayola rounded-lg text-sm font-light"></textarea>
         </div>
         <div>
           <h2 className="text-2xl font-medium">Registro</h2>

@@ -1,6 +1,6 @@
 const Button = ({variant, label}) => {
   return (
-    <button className={`btn-${variant}`}>
+    <button className={`w-[149px] h-[42px] rounded-lg font-medium btn-${variant}`}>
       {label}
     </button>
   )

@@ -9,9 +9,9 @@
 }
 
 .btn-confirm {
-    @apply w-[149px] h-[42px] rounded-lg bg-cerulean-blue text-white;
+    @apply bg-cerulean-blue text-white;
 }
 
 .btn-cancel {
-    @apply w-[149px] h-[42px] rounded-lg bg-platinum;
+    @apply bg-platinum;
 }
