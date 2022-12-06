@@ -5,7 +5,7 @@ const SearchBar = () => {
     <div className="w-4/5 lg:w-1/2 pb-10">
       <div className="flex flex-row items-center px-4 py-2 border border-cadet-blue-crayola rounded-lg focus-within:border-transparent focus-within:outline outline-blue-700">
         <FaSearch className="fill-cool-grey mr-2" />
-        <input className="w-full border-none outline-none placeholder:text-cool-grey" type="text" placeholder="Buscar bodega" />
+        <input className="w-full border-none outline-none placeholder:text-cool-grey" type="text" placeholder="Busca una bodega, referencia o lote" />
       </div>
     </div>
   )
