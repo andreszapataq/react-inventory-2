@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom"
+import {FaWarehouse} from 'react-icons/fa'
 
 const Header = () => {
   let location = useLocation()
@@ -25,9 +26,12 @@ const Header = () => {
       )}
       {location.pathname.includes('/lotes/') && (
         <div className="grid grid-rows-3 py-8 justify-items-center">
-          <p></p>
           <h1 className="text-3xl font-semibold">{nombre}</h1>
           <p className="text-xl">{codigo}</p>
+          <div className="flex">
+            <FaWarehouse className="fill-raisin-black mr-2" />
+            <p className="text-xs font-light text-raisin-black">Bodega actual: Hospital San José - Hospital San José de Popayán E.S.E.</p>
+          </div>
         </div>
       )}
     </div>
