@@ -7,7 +7,7 @@ function Lotes({lotes}) {
     <ItemContainer>
       {lotes.map((lote, index) => (
       <div key={index}>
-        <Link to={`/lote/${index}`}>
+        <Link to={`/lote/${index}`} state={{lote}}>
           <ItemRow lote={lote} />
         </Link>
       </div>
