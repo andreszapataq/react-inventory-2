@@ -19,9 +19,9 @@ const Header = () => {
       )}
       {location.pathname.includes('/bodega/') && (
         <div className="grid grid-rows-3 py-8 justify-items-center">
-          <p></p>
           <h1 className="text-3xl font-semibold">{bodega}</h1>
           <p className="text-xl">{cliente}</p>
+          <p></p>
         </div>
       )}
       {location.pathname.includes('/lotes/') && (
@@ -30,7 +30,7 @@ const Header = () => {
           <p className="text-xl">{codigo}</p>
           <div className="flex">
             <FaWarehouse className="fill-raisin-black mr-2" />
-            <p className="text-xs font-light text-raisin-black">Bodega actual: Hospital San José - Hospital San José de Popayán E.S.E.</p>
+            <p className="text-xs text-raisin-black"><span className="font-light">Bodega actual: </span>Hospital San José - Hospital San José de Popayán E.S.E.</p>
           </div>
         </div>
       )}
