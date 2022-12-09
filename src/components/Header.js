@@ -13,7 +13,7 @@ const Header = () => {
       {location.pathname === "/" && (
         <div className="grid grid-rows-3 py-8 justify-items-center">
           <p></p>
-          <h1 className="text-3xl font-semibold">Bodegax</h1>
+          <h1 className="text-3xl font-semibold">Bodegas</h1>
           <p></p>
         </div>
       )}
