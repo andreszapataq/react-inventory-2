@@ -3,7 +3,6 @@ import {FaCaretSquareDown} from 'react-icons/fa'
 
 const DropdownSearch = () => {
   const [isOpen, setIsOpen] = useState(false)
-  console.log(isOpen)
 
   return (
     <div>
@@ -16,7 +15,7 @@ const DropdownSearch = () => {
       </div>
 
       {isOpen && (
-        <div className='origin-top-right right-0 mt-2 w-[287px] rounded-md shadow-lg'>
+        <div className='origin-top-right right-0 mt-2 w-[287px] rounded-lg shadow-lg'>
           <div className="py-1 rounded-md bg-white shadow-xs">
             <form>
               <input
