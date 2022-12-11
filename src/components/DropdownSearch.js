@@ -1,12 +1,35 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import {FaCaretSquareDown, FaSearch} from 'react-icons/fa'
 import DropdownRow from './DropdownRow'
 
 const DropdownSearch = ({bodegas}) => {
   const [isOpen, setIsOpen] = useState(false)
+  const wrapperRef = useRef(null)
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if(wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setIsOpen(false)
+      }
+    }
+
+    function handleKeyDown(event) {
+      if(event.key === 'Escape') {
+        setIsOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('keydown', handleKeyDown)
+    
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [wrapperRef])
 
   return (
-    <div>
+    <div ref={wrapperRef} className="w-[287px]" >
       <div onClick={() => setIsOpen(!isOpen)} className='flex justify-between items-center w-[287px] h-[38px] px-2 py-1 border border-cadet-blue-crayola rounded-lg'>
         <div>
           <p className='text-xs'>Hospital San José</p>
