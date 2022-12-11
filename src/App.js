@@ -21,7 +21,7 @@ function App() {
           <Route path="/lotes/:id" element={<Lotes lotes={LOTES} />} />
         </Route>
         <Route element={<SecondaryLayout />}>
-          <Route path="/lote/:id" element={<Lote />} />
+          <Route path="/lote/:id" element={<Lote bodegas={BODEGAS} />} />
         </Route>
       </Routes>
     </Router>

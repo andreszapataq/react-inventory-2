@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import {FaCaretSquareDown, FaSearch} from 'react-icons/fa'
+import DropdownRow from './DropdownRow'
 
-const DropdownSearch = () => {
+const DropdownSearch = ({bodegas}) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -24,18 +25,9 @@ const DropdownSearch = () => {
             <div className="border-t border-gray-100" />
             <div className='px-4 py-2 text-[10px] text-cool-grey'>Sugerencias</div>
             <div>
-              <div className='px-4 py-2 hover:bg-cultured cursor-pointer'>
-                <p className='text-xs'>Principal</p>
-                <p className='text-[7px] font-light'>Vive Solutions - 900274934</p>
-              </div>
-              <div className='px-4 py-2 hover:bg-cultured cursor-pointer'>
-                <p className='text-xs'>Hospital San José</p>
-                <p className='text-[7px] font-light'>Hospital San José de Popayán E.S.E. - 891580002</p>
-              </div>
-              <div className='px-4 py-2 hover:bg-cultured cursor-pointer'>
-                <p className='text-xs'>Hospital San José</p>
-                <p className='text-[7px] font-light'>Megatecnología y Rehabilitación Colombiana - 900094992</p>
-              </div>
+              {bodegas.map((bodega, index) => (
+                <DropdownRow key={index} bodega={bodega} />
+              ))}
             </div>
           </div>
         </div>
