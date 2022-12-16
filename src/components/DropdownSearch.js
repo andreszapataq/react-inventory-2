@@ -1,20 +1,27 @@
 import { useState, useRef, useEffect } from 'react'
-import {FaCaretSquareDown, FaSearch} from 'react-icons/fa'
+import {FaCaretSquareDown, FaSearch, FaTimes} from 'react-icons/fa'
 import DropdownRow from './DropdownRow'
 
 const DropdownSearch = ({bodegas}) => {
   const [isOpen, setIsOpen] = useState(false)
   const [filteredBodegas, setFilteredBodegas] = useState(bodegas)
+  const [searchTerm, setSearchTerm] = useState('')
   const wrapperRef = useRef(null)
 
   const handleFilter = event => {
-    const searchTerm = event.target.value.toLowerCase()
+    const inputValue = event.target.value.toLowerCase()
     const filtered = bodegas.filter(bodega =>
       Object.values(bodega).some(value =>
-        typeof value === 'string' && value.toLowerCase().includes(searchTerm)
+        typeof value === 'string' && value.toLowerCase().includes(inputValue)
       )  
     )
     setFilteredBodegas(filtered)
+    setSearchTerm(event.target.value)
+  }
+
+  const clearInput = () => {
+    setSearchTerm('')
+    setFilteredBodegas(bodegas)
   }
 
   useEffect(() => {
@@ -53,8 +60,11 @@ const DropdownSearch = ({bodegas}) => {
         <div className='absolute w-[287px] mt-px rounded-lg shadow-lg'>
           <div className="py-1 rounded-lg bg-white">
             <div className='flex items-center px-3 py-2 bg-ghost-white rounded-tl-lg rounded-tr-lg'>
-              <FaSearch size={14} className='fill-cool-grey mr-2' />
-              <input type="text" onChange={handleFilter} className="w-full text-slate-500 text-xs bg-ghost-white placeholder:text-cool-grey focus:outline-none" placeholder="Buscar bodega" />
+              <FaSearch size={13} className='fill-cool-grey mr-2' />
+              <input type="text" value={searchTerm} onChange={handleFilter} className="w-full text-slate-500 text-xs bg-ghost-white placeholder:text-cool-grey focus:outline-none" placeholder="Buscar bodega" />
+              {searchTerm.length > 0 && (
+                <FaTimes size={12} className='fill-cool-grey cursor-pointer' onClick={clearInput} />
+              )}
             </div>
             <div className="border-t border-gray-100" />
             <div className='px-4 py-2 text-[10px] text-cool-grey'>Sugerencias</div>
