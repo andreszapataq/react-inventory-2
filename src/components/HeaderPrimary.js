@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom"
 import {FaWarehouse} from 'react-icons/fa'
 
-const Header = () => {
+const HeaderPrimary = () => {
   let location = useLocation()
   const bodega = location.state?.bodega?.nombre
   const cliente = location.state?.bodega?.cliente
@@ -11,10 +11,10 @@ const Header = () => {
   return (
     <div className="w-4/5 lg:w-1/2 flex flex-col items-center">
       {location.pathname === "/" && (
-        <div className="grid grid-rows-3 py-8 justify-items-center">
+        <div className="grid grid-rows-3 w-full py-8 justify-items-center">
           <p></p>
           <h1 className="text-3xl font-semibold">Bodegas</h1>
-          <p></p>
+          <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer">Crear bodega</p>
         </div>
       )}
       {location.pathname.includes('/bodega/') && (
@@ -38,4 +38,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default HeaderPrimary

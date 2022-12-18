@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
 
-import Header from "../components/Header";
+import HeaderPrimary from "../components/HeaderPrimary";
 import SearchBar from "../components/SearchBar";
 
 const PrimaryLayout = () => {
   return (
     <div className="flex flex-col items-center">
-        <Header />
+        <HeaderPrimary />
         <SearchBar />
         <Outlet />
     </div>

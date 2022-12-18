@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom"
 import {FaBoxOpen} from 'react-icons/fa'
 
-const HeaderLote = () => {
+const HeaderSecondary = () => {
   let location = useLocation()
   const lote = location.state?.lote?.lote
   const fecha_vencimiento = location.state?.lote?.fecha_vencimiento
@@ -21,4 +21,4 @@ const HeaderLote = () => {
   )
 }
 
-export default HeaderLote
+export default HeaderSecondary
