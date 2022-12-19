@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { useLocation } from "react-router-dom"
 import {FaWarehouse} from 'react-icons/fa'
 
@@ -7,6 +8,12 @@ const HeaderPrimary = () => {
   const cliente = location.state?.bodega?.cliente
   const nombre = location.state?.referencia?.nombre
   const codigo = location.state?.referencia?.codigo
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen)
+  }
   
   return (
     <div className="w-4/5 lg:w-1/2 flex flex-col items-center">
@@ -14,7 +21,22 @@ const HeaderPrimary = () => {
         <div className="grid grid-rows-3 w-full py-8 justify-items-center">
           <p></p>
           <h1 className="text-3xl font-semibold">Bodegas</h1>
-          <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer">Crear bodega</p>
+          <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer" onClick={toggleModal}>Crear bodega</p>
+          {isModalOpen && (
+        <div style={{
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+          {/* Modal content goes here */}
+        </div>
+      )}
         </div>
       )}
       {location.pathname.includes('/bodega/') && (
