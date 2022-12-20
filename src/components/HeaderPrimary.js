@@ -2,6 +2,8 @@ import { useState } from "react"
 import { useLocation } from "react-router-dom"
 import {FaWarehouse} from 'react-icons/fa'
 
+import Modal from "./Modal"
+
 const HeaderPrimary = () => {
   let location = useLocation()
   const bodega = location.state?.bodega?.nombre
@@ -23,27 +25,15 @@ const HeaderPrimary = () => {
           <h1 className="text-3xl font-semibold">Bodegas</h1>
           <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer" onClick={toggleModal}>Crear bodega</p>
           {isModalOpen && (
-        <div style={{
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}>
-          {/* Modal content goes here */}
-        </div>
-      )}
+            <Modal toggleModal={toggleModal} />
+          )}
         </div>
       )}
       {location.pathname.includes('/bodega/') && (
         <div className="grid grid-rows-3 py-8 justify-items-center">
           <h1 className="text-3xl font-semibold">{bodega}</h1>
           <p className="text-xl">{cliente}</p>
-          <p></p>
+          <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer" onClick={toggleModal}>Crear despacho</p>
         </div>
       )}
       {location.pathname.includes('/lotes/') && (
