@@ -47,8 +47,8 @@ const DropdownSearch = ({bodegas}) => {
   }, [wrapperRef])
 
   return (
-    <div ref={wrapperRef} className="w-[287px]" >
-      <div onClick={() => setIsOpen(!isOpen)} className='flex justify-between items-center w-[287px] h-[38px] px-2 py-1 border border-cadet-blue-crayola rounded-lg'>
+    <div ref={wrapperRef} className="w-[346px]" >
+      <div onClick={() => setIsOpen(!isOpen)} className='flex justify-between items-center w-[346px] h-[38px] px-2 py-1 border border-cadet-blue-crayola rounded-lg'>
         <div>
           <p className='text-xs'>Hospital San José</p>
           <p className='text-[9px] font-light'>Megatecnología y Rehabilitación Colombiana - 900094992</p>
@@ -57,13 +57,13 @@ const DropdownSearch = ({bodegas}) => {
       </div>
 
       {isOpen && (
-        <div className='absolute w-[287px] mt-px rounded-lg shadow-lg'>
+        <div className='absolute w-[346px] mt-px rounded-lg shadow-lg'>
           <div className="py-1 rounded-lg bg-white">
             <div className='flex items-center px-3 py-2 bg-ghost-white rounded-tl-lg rounded-tr-lg'>
               <FaSearch size={13} className='fill-cool-grey mr-2' />
               <input type="text" value={searchTerm} onChange={handleFilter} className="w-full text-slate-500 text-xs bg-ghost-white placeholder:text-cool-grey focus:outline-none" placeholder="Buscar bodega" />
               {searchTerm.length > 0 && (
-                <FaTimes size={12} className='fill-cool-grey cursor-pointer' onClick={clearInput} />
+                <FaTimes size={12} className='fill-cool-grey cursor-pointer ml-2' onClick={clearInput} />
               )}
             </div>
             <div className="border-t border-gray-100" />
