@@ -17,7 +17,7 @@ const Modal = ({toggleModal}) => {
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-2">Cliente</h3>
-          <DropdownSearch />
+          <DropdownSearch label="Seleccionar cliente" />
         </div>
         <div className="w-[346px] flex justify-end gap-4 mt-10">
           <Button variant="cancel" label="Cancelar" />

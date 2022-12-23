@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import {FaCaretSquareDown, FaSearch, FaTimes} from 'react-icons/fa'
 import DropdownRow from './DropdownRow'
 
-const DropdownSearch = ({bodegas}) => {
+const DropdownSearch = ({bodegas, label}) => {
   const [isOpen, setIsOpen] = useState(false)
   const [filteredBodegas, setFilteredBodegas] = useState(bodegas)
   const [searchTerm, setSearchTerm] = useState('')
@@ -48,10 +48,9 @@ const DropdownSearch = ({bodegas}) => {
 
   return (
     <div ref={wrapperRef} className="w-[346px]" >
-      <div onClick={() => setIsOpen(!isOpen)} className='flex justify-between items-center w-[346px] h-[38px] px-2 py-1 border border-cadet-blue-crayola rounded-lg'>
+      <div onClick={() => setIsOpen(!isOpen)} className='flex justify-between items-center w-[346px] h-[38px] px-2 py-1 border border-cadet-blue-crayola rounded-lg cursor-pointer'>
         <div>
-          <p className='text-xs'>Hospital San José</p>
-          <p className='text-[9px] font-light'>Megatecnología y Rehabilitación Colombiana - 900094992</p>
+          <p className='text-xs'>{label}</p>
         </div>
         <FaCaretSquareDown className='fill-cadet-blue-crayola hover:fill-cool-grey cursor-pointer' />
       </div>

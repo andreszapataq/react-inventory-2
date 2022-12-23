@@ -12,7 +12,7 @@ function Lote({bodegas}) {
       </div>
       <div>
         <h2 className="text-2xl font-medium mb-3">Trasladar a</h2>
-        <DropdownSearch bodegas={bodegas} />
+        <DropdownSearch bodegas={bodegas} label="Seleccionar bodega" />
       </div>
       <div>
         <h2 className="text-2xl font-medium mb-3">Notas</h2>
