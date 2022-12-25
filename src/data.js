@@ -58,14 +58,17 @@ export const LOTES = [
 export const CLIENTES = [
     {
         nombre: 'Vive Solutions',
-        id: '900274934'
+        id_type: 'NIT.',
+        id_number: '900274934'
     },
     {
         nombre: 'Hospital San José de Popayán E.S.E.',
-        id: '891580002'
+        id_type: 'NIT.',
+        id_number: '891580002'
     },
     {
         nombre: 'Megatecnología y Rehabilitación Colombiana',
-        id: '900094992'
+        id_type: 'NIT.',
+        id_number: '900094992'
     }
 ]
