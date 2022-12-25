@@ -54,3 +54,18 @@ export const LOTES = [
         fecha_vencimiento: '23/07/2026'
     }
 ]
+
+export const CLIENTES = [
+    {
+        nombre: 'Vive Solutions',
+        id: '900274934'
+    },
+    {
+        nombre: 'Hospital San José de Popayán E.S.E.',
+        id: '891580002'
+    },
+    {
+        nombre: 'Megatecnología y Rehabilitación Colombiana',
+        id: '900094992'
+    }
+]
