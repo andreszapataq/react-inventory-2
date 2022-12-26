@@ -2,15 +2,26 @@ import { useState, useRef, useEffect } from 'react'
 import {FaCaretSquareDown, FaSearch, FaTimes} from 'react-icons/fa'
 import DropdownRow from './DropdownRow'
 
-const DropdownSearch = ({bodegas, label}) => {
+import { useLocation } from 'react-router-dom'
+
+const DropdownSearch = ({bodegas, label, clientes}) => {
+  let location = useLocation()
+  let data = []
+
+  if(location.pathname === '/') {
+    data = clientes
+  } else if(location.pathname.includes('/lote/')) {
+    data = bodegas
+  }
+  
   const [isOpen, setIsOpen] = useState(false)
-  const [filteredBodegas, setFilteredBodegas] = useState(bodegas)
+  const [filteredBodegas, setFilteredBodegas] = useState(data)
   const [searchTerm, setSearchTerm] = useState('')
   const wrapperRef = useRef(null)
 
   const handleFilter = event => {
     const inputValue = event.target.value.toLowerCase()
-    const filtered = bodegas.filter(bodega =>
+    const filtered = data.filter(bodega =>
       Object.values(bodega).some(value =>
         typeof value === 'string' && value.toLowerCase().includes(inputValue)
       )  
@@ -21,7 +32,7 @@ const DropdownSearch = ({bodegas, label}) => {
 
   const clearInput = () => {
     setSearchTerm('')
-    setFilteredBodegas(bodegas)
+    setFilteredBodegas(data)
   }
 
   useEffect(() => {

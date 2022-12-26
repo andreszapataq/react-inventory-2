@@ -4,7 +4,7 @@ import {FaWarehouse} from 'react-icons/fa'
 
 import Modal from "./Modal"
 
-const HeaderPrimary = () => {
+const HeaderPrimary = ({clientes}) => {
   let location = useLocation()
   const bodega = location.state?.bodega?.nombre
   const cliente = location.state?.bodega?.cliente
@@ -25,7 +25,7 @@ const HeaderPrimary = () => {
           <h1 className="text-3xl font-semibold">Bodegas</h1>
           <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer" onClick={toggleModal}>Crear bodega</p>
           {isModalOpen && (
-            <Modal toggleModal={toggleModal} />
+            <Modal toggleModal={toggleModal} clientes={clientes} />
           )}
         </div>
       )}

@@ -3,7 +3,7 @@ import { FaTimesCircle } from "react-icons/fa"
 import DropdownSearch from "./DropdownSearch"
 import Button from "./Button"
 
-const Modal = ({toggleModal}) => {
+const Modal = ({toggleModal, clientes}) => {
   return (
     <div className="modal">
       <div className="flex flex-col gap-7 w-[412px] h-[452px] border-2 border-black bg-white p-5 rounded-lg">
@@ -17,7 +17,7 @@ const Modal = ({toggleModal}) => {
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-2">Cliente</h3>
-          <DropdownSearch label="Seleccionar cliente" />
+          <DropdownSearch label="Seleccionar cliente" clientes={clientes} />
         </div>
         <div className="w-[346px] flex justify-end gap-4 mt-10">
           <Button variant="cancel" label="Cancelar" />
