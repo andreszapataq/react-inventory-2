@@ -12,11 +12,11 @@ const Modal = ({toggleModal, clientes}) => {
         </div>
         <h2 className="text-2xl font-semibold -mt-3">Crear bodega</h2>
         <div>
-          <h3 className="text-lg font-semibold mb-2">Nombre</h3>
+          <h3 className="text-lg font-semibold mb-2"><span className="text-cerulean-blue">*</span> Nombre</h3>
           <input type="text" className="w-[346px] h-[38px] px-2 py-1 border border-cadet-blue-crayola rounded-lg" />
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-2">Cliente</h3>
+          <h3 className="text-lg font-semibold mb-2"><span className="text-cerulean-blue">*</span> Cliente</h3>
           <DropdownSearch label="Seleccionar cliente" clientes={clientes} />
         </div>
         <div className="w-[346px] flex justify-end gap-4 mt-24">
