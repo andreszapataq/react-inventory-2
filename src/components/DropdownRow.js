@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom"
 
 const DropdownRow = ({bodega}) => {
 
-  const location = useLocation()
+  let location = useLocation()
   
   return (
     <div className='px-4 py-2 rounded-lg hover:bg-cultured cursor-pointer'>

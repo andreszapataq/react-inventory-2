@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom"
+
 import DropdownSearch from "../components/DropdownSearch"
 import LoteLog from "../components/LoteLog"
 import Button from "../components/Button"
 
 function Lote({bodegas}) {
+  const navigate = useNavigate()
+
   return (
     <div className="flex flex-col gap-14">
       <div>
@@ -23,7 +27,7 @@ function Lote({bodegas}) {
         <LoteLog />
       </div>
       <div className="w-[461px] flex justify-end gap-4 mt-10">
-        <Button variant="cancel" label="Cancelar" />
+        <Button variant="cancel" label="Cancelar" onClick={() => navigate(-1)} />
         <Button variant="confirm" label="Guardar" />
       </div>
     </div>
