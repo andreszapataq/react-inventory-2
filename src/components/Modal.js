@@ -1,12 +1,37 @@
+import { useRef, useEffect } from "react"
 import { FaTimesCircle } from "react-icons/fa"
 
 import DropdownSearch from "./DropdownSearch"
 import Button from "./Button"
 
 const Modal = ({toggleModal, clientes}) => {
+  const modalRef = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if(modalRef.current && !modalRef.current.contains(event.target)) {
+        toggleModal()
+      }
+    }
+    
+    const handleKeyDown = (event) => {
+      if(event.key === 'Escape') {
+        toggleModal()
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener("keydown", handleKeyDown);
+    }
+  }, [toggleModal])
+
   return (
     <div className="modal">
-      <div className="flex flex-col gap-6 w-[412px] h-[492px] border-2 border-black bg-white p-5 rounded-lg">
+      <div ref={modalRef} className="flex flex-col gap-6 w-[412px] h-[492px] border-2 border-black bg-white p-5 rounded-lg">
         <div className="flex justify-end">
             <FaTimesCircle className="cursor-pointer" onClick={toggleModal} />
         </div>
