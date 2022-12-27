@@ -33,7 +33,7 @@ const HeaderPrimary = ({clientes}) => {
         <div className="grid grid-rows-3 py-8 justify-items-center">
           <h1 className="text-3xl font-semibold">{bodega}</h1>
           <p className="text-xl">{cliente}</p>
-          <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer" onClick={toggleModal}>Crear despacho</p>
+          <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer">Crear despacho</p>
         </div>
       )}
       {location.pathname.includes('/lotes/') && (
