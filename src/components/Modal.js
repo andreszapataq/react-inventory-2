@@ -20,7 +20,7 @@ const Modal = ({toggleModal, clientes}) => {
           <DropdownSearch label="Seleccionar cliente" clientes={clientes} />
         </div>
         <div className="w-[346px] flex justify-end gap-4 mt-24">
-          <Button variant="cancel" label="Cancelar" />
+          <Button variant="cancel" label="Cancelar" onClick={toggleModal} />
           <Button variant="confirm" label="Crear bodega" />
         </div>
       </div>
