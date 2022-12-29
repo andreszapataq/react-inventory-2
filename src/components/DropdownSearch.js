@@ -4,7 +4,7 @@ import DropdownRow from './DropdownRow'
 
 import { useLocation } from 'react-router-dom'
 
-const DropdownSearch = ({bodegas, label, clientes}) => {
+const DropdownSearch = ({clientes, bodegas, label}) => {
   let location = useLocation()
   let data = []
 
@@ -15,24 +15,24 @@ const DropdownSearch = ({bodegas, label, clientes}) => {
   }
   
   const [isOpen, setIsOpen] = useState(false)
-  const [filteredBodegas, setFilteredBodegas] = useState(data)
+  const [filteredData, setFilteredData] = useState(data)
   const [searchTerm, setSearchTerm] = useState('')
   const wrapperRef = useRef(null)
 
   const handleFilter = event => {
     const inputValue = event.target.value.toLowerCase()
-    const filtered = data.filter(bodega =>
-      Object.values(bodega).some(value =>
+    const filtered = data.filter(element =>
+      Object.values(element).some(value =>
         typeof value === 'string' && value.toLowerCase().includes(inputValue)
       )  
     )
-    setFilteredBodegas(filtered)
+    setFilteredData(filtered)
     setSearchTerm(event.target.value)
   }
 
   const clearInput = () => {
     setSearchTerm('')
-    setFilteredBodegas(data)
+    setFilteredData(data)
   }
 
   useEffect(() => {
@@ -79,8 +79,8 @@ const DropdownSearch = ({bodegas, label, clientes}) => {
             <div className="border-t border-gray-100" />
             <div className='px-4 py-2 text-[10px] text-cool-grey'>Sugerencias</div>
             <div>
-              {filteredBodegas.map((bodega, index) => (
-                <DropdownRow key={index} bodega={bodega} />
+              {filteredData.map((item, index) => (
+                <DropdownRow key={index} item={item} />
               ))}
             </div>
           </div>
