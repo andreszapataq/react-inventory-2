@@ -1,10 +1,11 @@
 import { useState } from "react"
-import { useLocation } from "react-router-dom"
+import { useLocation, Link, useParams } from "react-router-dom"
 import {FaWarehouse} from 'react-icons/fa'
 
 import Modal from "./Modal"
 
 const HeaderPrimary = ({clientes}) => {
+  let { id } = useParams()
   let location = useLocation()
   const bodega = location.state?.bodega?.nombre
   const cliente = location.state?.bodega?.cliente
@@ -33,7 +34,9 @@ const HeaderPrimary = ({clientes}) => {
         <div className="grid grid-rows-3 py-8 justify-items-center">
           <h1 className="text-3xl font-semibold">{bodega}</h1>
           <p className="text-xl">{cliente}</p>
-          <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer">Crear despacho</p>
+          <Link to={`/despacho/${id}`}>
+            <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer">Crear despacho</p>
+          </Link>
         </div>
       )}
       {location.pathname.includes('/lotes/') && (

@@ -1,6 +1,10 @@
+import ResumenCard from "../components/ResumenCard"
+
 function Despacho() {
   return (
-    <div>Despacho</div>
+    <div>
+      <ResumenCard />
+    </div>
   )
 }
 
