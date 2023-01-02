@@ -18,11 +18,11 @@ function App() {
           <Route path="/" element={<Bodegas bodegas={BODEGAS} />} />
           <Route path="/bodega/:id" element={<Bodega inventario={INVENTARIO} />} />
           <Route path="/lotes/:id" element={<Lotes lotes={LOTES} />} />
-          <Route path="/despacho/:id" element={<Despacho />} />
         </Route>
         <Route element={<SecondaryLayout />}>
           <Route path="/lote/:id" element={<Lote bodegas={BODEGAS} />} />
         </Route>
+        <Route path="/despacho/:id" element={<Despacho />} />
       </Routes>
     </Router>
   );
