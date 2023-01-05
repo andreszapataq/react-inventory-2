@@ -1,4 +1,3 @@
-import { FaRegShareSquare } from "react-icons/fa"
 import { MdIosShare } from "react-icons/md"
 
 import Button from "./Button"
@@ -15,7 +14,6 @@ const ResumenCard = () => {
           <p className="text-xs"><span className="font-semibold">Cliente: </span>Implameq S.A.S.</p>
           <div className="flex justify-between items-center">
             <p className="text-xs"><span className="font-semibold">Ciudad: </span>Cali</p>
-            {/* <FaRegShareSquare className="cursor-pointer" /> */}
             <MdIosShare className="fill-[#bfbfbf] cursor-pointer" />
           </div>
         </div>
