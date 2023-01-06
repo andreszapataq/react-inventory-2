@@ -10,9 +10,8 @@ const HeaderDespacho = () => {
   }
 
   return (
-    // <div className={`flex justify-between items-center ${reverse ? `flex-row-reverse` : ''}`}>
     <div className='grid grid-cols-3'>
-      <div className={`w-[428px] ${reverse ? `order-last justify-self-end ` : `order-first`}`}>
+      <div className={`w-[428px] ${reverse ? `order-last justify-self-end` : `order-first`}`}>
         <p className='font-light text-xs'>{reverse ? 'Hacia' : 'Desde'}</p>
         <p className='font-semibold text-2xl'>Principal</p>
         <p className='font-light text-sm'>Vive Solutions - 900274934</p>
