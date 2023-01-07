@@ -11,7 +11,7 @@ const HeaderDespacho = () => {
 
   return (
     <div className='grid grid-cols-3'>
-      <div className={`w-[428px] ${reverse ? `order-last justify-self-end` : `order-first`}`}>
+      <div className={`w-[428px] ${reverse ? `order-last justify-self-end transition-all` : `order-first transition-all`}`}>
         <p className='font-light text-xs'>{reverse ? 'Hacia' : 'Desde'}</p>
         <p className='font-semibold text-2xl'>Principal</p>
         <p className='font-light text-sm'>Vive Solutions - 900274934</p>
@@ -19,7 +19,7 @@ const HeaderDespacho = () => {
       <div className='justify-self-center self-center'>
         <MdSwapHoriz size={37} className="fill-raisin-black cursor-pointer" onClick={handleSwap} />
       </div>
-      <div className={reverse ? `order-first` : `order-last justify-self-end`}>
+      <div className={reverse ? `order-first transition-all` : `order-last justify-self-end transition-all`}>
         <p className='font-light text-xs mb-1.5'>{reverse ? 'Desde' : 'Hacia'}</p>
         <div className='w-[428px]'>
           <div className="flex items-center px-4 py-2 border border-cadet-blue-crayola rounded-lg focus-within:border-transparent focus-within:outline outline-blue-700">
