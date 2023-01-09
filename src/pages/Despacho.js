@@ -1,6 +1,7 @@
 import HeaderDespacho from "../components/HeaderDespacho"
-import ResumenCard from "../components/ResumenCard"
 import SearchBar from "../components/SearchBar"
+import ResumenCard from "../components/ResumenCard"
+import DespachoRow from "../components/DespachoRow"
 
 function Despacho() {
   return (
@@ -10,6 +11,7 @@ function Despacho() {
       <div className="flex justify-between">
         <div className="w-2/3 flex flex-col">
           <SearchBar />
+          <DespachoRow />
         </div>
         <div className="w-1/3 flex flex-col items-end">
           <ResumenCard />
