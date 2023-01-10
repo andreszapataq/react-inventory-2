@@ -27,7 +27,7 @@ const SearchBar = () => {
       {location.pathname.includes('/despacho/') && (
         <div className="flex items-center px-4 py-2 border border-cadet-blue-crayola rounded-lg focus-within:border-transparent focus-within:outline outline-blue-700">
           <FaSearch className="fill-cool-grey mr-2" />
-          <input className="w-full border-none outline-none placeholder:text-cool-grey" type="text" placeholder="Busca por nombre de producto, código o lote" />
+          <input className="w-full border-none outline-none placeholder:text-cool-grey" type="text" placeholder="Busca por lote, nombre de producto o código" />
         </div>
       )}
     </div>
