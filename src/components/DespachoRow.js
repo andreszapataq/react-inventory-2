@@ -17,7 +17,7 @@ const DespachoRow = () => {
       <div className="flex justify-end items-center">
         <div className="h-12 w-px bg-green-300 mr-8"></div>
         <p className="text-xs font-light">23/03/2025</p>
-        {check ? <div className="w-[13px] h-[13px] self-start rounded-full border border-cool-grey"></div> : <FaCheckCircle size={13} className="self-start fill-raisin-black" />}
+        {check ? <FaCheckCircle size={13} className="self-start fill-raisin-black" /> : <div className="w-[13px] h-[13px] self-start rounded-full border border-cool-grey"></div>}
       </div>
     </div>
   )
