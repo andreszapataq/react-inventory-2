@@ -26,7 +26,7 @@ function Lote({bodegas}) {
         <h2 className="text-2xl font-medium mb-3">Registro</h2>
         <LoteLog />
       </div>
-      <div className="w-[461px] flex justify-end gap-4 mt-10">
+      <div className="w-[461px] flex justify-end gap-3 mt-10">
         <Button variant="cancel" label="Cancelar" onClick={() => navigate(-1)} />
         <Button variant="confirm" label="Guardar" />
       </div>

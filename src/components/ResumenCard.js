@@ -21,7 +21,7 @@ const ResumenCard = () => {
       </div>
       <div>
       </div>
-      <div className="flex justify-end gap-4">
+      <div className="flex justify-end gap-3">
         <Button variant="cancel" label="Cancelar" />
         <Button variant="confirm" label="Guardar" />
       </div>
