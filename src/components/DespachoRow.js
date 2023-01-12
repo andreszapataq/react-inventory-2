@@ -9,7 +9,7 @@ const DespachoRow = () => {
   }
 
   return (
-    <div className="flex justify-between items-center bg-cultured rounded-lg lg:w-3/5 pl-8 pr-4 py-4 mb-4 cursor-pointer" onClick={handleCheck}>
+    <div className="w-3/5 flex justify-between items-center bg-cultured rounded-lg pl-8 pr-4 py-4 mb-4 cursor-pointer" onClick={handleCheck}>
       <div>
         <h2 className="text-lg font-semibold">MORA210189-054</h2>
         <p className="text-xs font-light">DBM Putty 5.00 CC - AT679FD</p>

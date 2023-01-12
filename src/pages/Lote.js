@@ -20,7 +20,7 @@ function Lote({bodegas}) {
       </div>
       <div>
         <h2 className="text-2xl font-medium mb-3">Notas</h2>
-        <textarea name="notes" id="notes" className="resize-none w-[461px] h-[104px] px-2 py-1 border border-cadet-blue-crayola rounded-lg text-sm font-light"></textarea>
+        <textarea name="notes" id="notes" className="resize-none w-[461px] h-[104px] p-2 border border-cadet-blue-crayola rounded-lg text-sm font-light"></textarea>
       </div>
       <div>
         <h2 className="text-2xl font-medium mb-3">Registro</h2>
