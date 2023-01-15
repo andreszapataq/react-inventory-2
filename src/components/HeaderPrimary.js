@@ -5,8 +5,6 @@ import {FaWarehouse} from 'react-icons/fa'
 import Modal from "./Modal"
 
 const HeaderPrimary = ({clientes}) => {
-  console.log(clientes)
-
   let { id } = useParams()
   let location = useLocation()
   const bodega = location.state?.bodega?.nombre
