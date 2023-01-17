@@ -31,29 +31,6 @@ export const BODEGAS = [
     }
 ]
 
-/* export const INVENTARIO = [
-    {
-        codigo: 'AT677FD',
-        nombre: 'DBM Putty 1.00 CC',
-        cantidad: 11
-    },
-    {
-        codigo: 'AT678FD',
-        nombre: 'DBM Putty 2.50 CC',
-        cantidad: 7
-    },
-    {
-        codigo: 'AT679FD',
-        nombre: 'DBM Putty 5.00 CC',
-        cantidad: 15
-    },
-    {
-        codigo: 'AT805FD',
-        nombre: 'Cancellous Crushed/Chips 10 CC (4-10mm) FD',
-        cantidad: 22
-    }
-] */
-
 export const INVENTARIO_PRINCIPAL = [
     {
         codigo: 'AT677FD',
