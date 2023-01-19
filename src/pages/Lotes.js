@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom"
+import { useLocation, Link } from "react-router-dom"
 import ItemContainer from "../components/ItemContainer"
 import ItemRow from "../components/ItemRow"
 
-function Lotes({lotes}) {
+function Lotes() {
+  let location = useLocation()
+  const lotes = location.state?.referencia?.lotes
+
   return (
     <ItemContainer>
       {lotes.map((lote, index) => (

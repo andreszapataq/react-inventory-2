@@ -37,11 +37,26 @@ export const INVENTARIO_PRINCIPAL = [
         nombre: 'DBM Putty 1.00 CC',
         cantidad: 5,
         lotes: [
-            'LOPA21101474-136',
-            'LOPA21101474-077',
-            'LOPA21101474-133',
-            'LOPA21101474-132',
-            'LOPA21101474-121'
+            {
+                lote: 'LOPA21101474-136',
+                fecha_vencimiento: '17/02/2025'
+            },
+            {
+                lote: 'LOPA21101474-077',
+                fecha_vencimiento: '17/02/2025'
+            },
+            {
+                lote: 'LOPA21101474-133',
+                fecha_vencimiento: '17/02/2025'
+            },
+            {
+                lote: 'LOPA21101474-132',
+                fecha_vencimiento: '17/02/2025'
+            },
+            {
+                lote: 'LOPA21101474-121',
+                fecha_vencimiento: '17/02/2025'
+            }
         ]
     },
     {
@@ -49,13 +64,34 @@ export const INVENTARIO_PRINCIPAL = [
         nombre: 'DBM Putty 2.50 CC',
         cantidad: 7,
         lotes: [
-            'SDS200411-072',
-            'LET21014568-134',
-            'LET21014568-091',
-            'SDS200411-055',
-            'LET21014568-104',
-            'LET21014568-141',
-            'LET21014568-082'
+            {
+                lote: 'SDS200411-072',
+                fecha_vencimiento: '18/01/2025'
+            },
+            {
+                lote: 'LET21014568-134',
+                fecha_vencimiento: '03/01/2025'
+            },
+            {
+                lote: 'LET21014568-091',
+                fecha_vencimiento: '03/01/2025'
+            },
+            {
+                lote: 'SDS200411-055',
+                fecha_vencimiento: '18/01/2025'
+            },
+            {
+                lote: 'LET21014568-104',
+                fecha_vencimiento: '03/01/2025'
+            },
+            {
+                lote: 'LET21014568-141',
+                fecha_vencimiento: '03/01/2025'
+            },
+            {
+                lote: 'LET21014568-082',
+                fecha_vencimiento: '03/01/2025'
+            }
         ]
     },
     {
@@ -63,17 +99,50 @@ export const INVENTARIO_PRINCIPAL = [
         nombre: 'DBM Putty 5.00 CC',
         cantidad: 11,
         lotes: [
-            'MSTF0915203-116',
-            'LOPA21070363-044',
-            'ATSFWI2200020-046',
-            'MSTF0915203-103',
-            'MSTF0915203-118',
-            'MORA210280-120',
-            'MORA210280-118',
-            'LOPA21110370-062',
-            'ATSFWI221147-041',
-            'MSTF0915203-115',
-            'MORA210280-111'
+            {
+                lote: 'MSTF0915203-116',
+                fecha_vencimiento: '15/12/2024'
+            },
+            {
+                lote: 'LOPA21070363-044',
+                fecha_vencimiento: '28/12/2024'
+            },
+            {
+                lote: 'ATSFWI2200020-046',
+                fecha_vencimiento: '23/12/2024'
+            },
+            {
+                lote: 'MSTF0915203-103',
+                fecha_vencimiento: '15/12/2024'
+            },
+            {
+                lote: 'MSTF0915203-118',
+                fecha_vencimiento: '15/12/2024'
+            },
+            {
+                lote: 'MORA210280-120',
+                fecha_vencimiento: '12/01/2025'
+            },
+            {
+                lote: 'MORA210280-118',
+                fecha_vencimiento: '12/01/2025'
+            },
+            {
+                lote: 'LOPA21110370-062',
+                fecha_vencimiento: '29/12/2024'
+            },
+            {
+                lote: 'ATSFWI221147-041',
+                fecha_vencimiento: '23/12/2024'
+            },
+            {
+                lote: 'MSTF0915203-115',
+                fecha_vencimiento: '15/12/2024'
+            },
+            {
+                lote: 'MORA210280-111',
+                fecha_vencimiento: '12/01/2025'
+            }
         ]
     },
     {
@@ -81,21 +150,66 @@ export const INVENTARIO_PRINCIPAL = [
         nombre: 'Cancellous Crushed/Chips 10 CC (4-10mm) FD',
         cantidad: 15,
         lotes: [
-            'LSDR210600397-010',
-            'LET20013378-010',
-            'LOPA21070995-029',
-            'LSDR210800295-014',
-            'LET22014690-012',
-            'LOPA21070995-030',
-            'ATSFWI221053-016',
-            'LOPA21092434-012',
-            'LOPA21091414-031',
-            'LET21014431-002',
-            'LET21014445-018',
-            'LSDR210800295-016',
-            'LSDR210800295-015',
-            'LSDR210800374-004',
-            'LSDR210800374-008'
+            {
+                lote: 'LSDR210600397-010',
+                fecha_vencimiento: '14/09/2026'
+            },
+            {
+                lote: 'LET20013378-010',
+                fecha_vencimiento: '27/08/2025'
+            },
+            {
+                lote: 'LOPA21070995-029',
+                fecha_vencimiento: '08/10/2026'
+            },
+            {
+                lote: 'LSDR210800295-014',
+                fecha_vencimiento: '14/10/2026'
+            },
+            {
+                lote: 'LET22014690-012',
+                fecha_vencimiento: '11/02/2027'
+            },
+            {
+                lote: 'LOPA21070995-030',
+                fecha_vencimiento: '08/10/2026'
+            },
+            {
+                lote: 'ATSFWI221053-016',
+                fecha_vencimiento: '14/10/2026'
+            },
+            {
+                lote: 'LOPA21092434-012',
+                fecha_vencimiento: '18/10/2026'
+            },
+            {
+                lote: 'LOPA21091414-031',
+                fecha_vencimiento: '07/10/2026'
+            },
+            {
+                lote: 'LET21014431-002',
+                fecha_vencimiento: '18/10/2026'
+            },
+            {
+                lote: 'LET21014445-018',
+                fecha_vencimiento: '21/10/2026'
+            },
+            {
+                lote: 'LSDR210800295-016',
+                fecha_vencimiento: '14/10/2026'
+            },
+            {
+                lote: 'LSDR210800295-015',
+                fecha_vencimiento: '14/10/2026'
+            },
+            {
+                lote: 'LSDR210800374-004',
+                fecha_vencimiento: '15/10/2026'
+            },
+            {
+                lote: 'LSDR210800374-008',
+                fecha_vencimiento: '15/10/2026'
+            }
         ]
     }
 ]
@@ -106,9 +220,18 @@ export const INVENTARIO_SAN_JOSE_SAN_JOSE = [
         nombre: 'DBM Putty 1.00 CC',
         cantidad: 3,
         lotes: [
-            'MORA200211-126',
-            'LOPA21101474-082',
-            'LOPA21101474-125'
+            {
+                lote: 'MORA200211-126',
+                fecha_vencimiento: '07/01/2025'
+            },
+            {
+                lote: 'LOPA21101474-082',
+                fecha_vencimiento: '17/02/2025'
+            },
+            {
+                lote: 'LOPA21101474-125',
+                fecha_vencimiento: '17/02/2025'
+            }
         ]
     },
     {
@@ -116,9 +239,18 @@ export const INVENTARIO_SAN_JOSE_SAN_JOSE = [
         nombre: 'Cancellous Crushed/Chips 15 CC (4-10mm) FD',
         cantidad: 3,
         lotes: [
-            'LOPA21121152-019',
-            'LOPA21121152-021',
-            'LOPA21121152-023'
+            {
+                lote: 'LOPA21121152-019',
+                fecha_vencimiento: '15/03/2027'
+            },
+            {
+                lote: 'LOPA21121152-021',
+                fecha_vencimiento: '15/03/2027'
+            },
+            {
+                lote: 'LOPA21121152-023',
+                fecha_vencimiento: '15/03/2027'
+            }
         ]
     },
     {
@@ -126,7 +258,10 @@ export const INVENTARIO_SAN_JOSE_SAN_JOSE = [
         nombre: 'Tricortical Blk 16-19 MM FD',
         cantidad: 1,
         lotes: [
-            'MORA220013-056'
+            {
+                lote: 'MORA220013-056',
+                fecha_vencimiento: '17/02/2027'
+            }
         ]
     }
 ]
@@ -137,10 +272,22 @@ export const INVENTARIO_SAN_JOSE_MEGATECNOLOGIA = [
         nombre: 'DBM Putty 10.0 CC',
         cantidad: 4,
         lotes: [
-            'LSDR211000351-093',
-            'LOPA22010231-151',
-            'LSDR211000351-070',
-            'LSDR211200830-046'
+            {
+                lote: 'LSDR211000351-093',
+                fecha_vencimiento: '17/02/2025'
+            },
+            {
+                lote: 'LOPA22010231-151',
+                fecha_vencimiento: '21/02/2025'
+            },
+            {
+                lote: 'LSDR211000351-070',
+                fecha_vencimiento: '17/02/2025'
+            },
+            {
+                lote: 'LSDR211200830-046',
+                fecha_vencimiento: '18/02/2025'
+            }
         ]
     },
     {
@@ -148,7 +295,10 @@ export const INVENTARIO_SAN_JOSE_MEGATECNOLOGIA = [
         nombre: 'Femoral Head',
         cantidad: 1,
         lotes: [
-            'SDS181008-007'
+            {
+                lote: 'SDS181008-007',
+                fecha_vencimiento: '07/11/2024'
+            }
         ]
     }
 ]

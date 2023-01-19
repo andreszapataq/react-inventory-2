@@ -8,7 +8,12 @@ import Lotes from "./pages/Lotes"
 import Lote from "./pages/Lote"
 import Despacho from "./pages/Despacho";
 
-import {CLIENTES, BODEGAS, LOTES, INVENTARIO_PRINCIPAL, INVENTARIO_SAN_JOSE_SAN_JOSE, INVENTARIO_SAN_JOSE_MEGATECNOLOGIA} from './data'
+import {CLIENTES,
+        BODEGAS,
+        INVENTARIO_PRINCIPAL,
+        INVENTARIO_SAN_JOSE_SAN_JOSE,
+        INVENTARIO_SAN_JOSE_MEGATECNOLOGIA
+} from './data'
 
 function App() {
   const inventarios = [
@@ -23,7 +28,7 @@ function App() {
         <Route element={<PrimaryLayout clientes={CLIENTES} />}>
           <Route path="/" element={<Bodegas bodegas={BODEGAS} />} />
           <Route path="/bodega/:id" element={<Bodega inventarios={inventarios} />} />
-          <Route path="/lotes/:id" element={<Lotes lotes={LOTES} />} />
+          <Route path="/lotes/:id" element={<Lotes />} />
         </Route>
         <Route element={<SecondaryLayout />}>
           <Route path="/lote/:id" element={<Lote bodegas={BODEGAS} />} />
