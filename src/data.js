@@ -302,22 +302,3 @@ export const INVENTARIO_SAN_JOSE_MEGATECNOLOGIA = [
         ]
     }
 ]
-
-export const LOTES = [
-    {
-        lote: 'MORA210189-054',
-        fecha_vencimiento: '23/03/2025'
-    },
-    {
-        lote: 'TDS210526-012',
-        fecha_vencimiento: '25/04/2027'
-    },
-    {
-        lote: 'TDS210526-009',
-        fecha_vencimiento: '25/04/2027'
-    },
-    {
-        lote: 'UTR21132-008',
-        fecha_vencimiento: '23/07/2026'
-    }
-]
