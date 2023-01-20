@@ -8,8 +8,7 @@ import Lotes from "./pages/Lotes"
 import Lote from "./pages/Lote"
 import Despacho from "./pages/Despacho";
 
-import {CLIENTES,
-        BODEGAS,
+import {BODEGAS,
         INVENTARIO_PRINCIPAL,
         INVENTARIO_SAN_JOSE_SAN_JOSE,
         INVENTARIO_SAN_JOSE_MEGATECNOLOGIA
@@ -25,7 +24,7 @@ function App() {
   return (
     <Router basename={`${process.env.NODE_ENV === 'production' ? '/bodegas' : ''}`}>
       <Routes>
-        <Route element={<PrimaryLayout clientes={CLIENTES} />}>
+        <Route element={<PrimaryLayout clientes={inventarios} />}>
           <Route path="/" element={<Bodegas bodegas={inventarios} />} />
           <Route path="/bodega/:id" element={<Bodega />} />
           <Route path="/lotes/:id" element={<Lotes />} />

@@ -7,7 +7,7 @@ const DropdownRow = ({item}) => {
   return (
     <div className='px-4 py-2 rounded-lg hover:bg-cultured cursor-pointer'>
       <p className='text-xs'>
-        {location.pathname === '/' ? item.nombre : item.nombre}
+        {location.pathname === '/' ? item.cliente : item.nombre}
       </p>
       <p className='text-[7px] font-light'>
         {location.pathname === '/' ? `${item.id_type} ${item.id_number}` : item.cliente}
