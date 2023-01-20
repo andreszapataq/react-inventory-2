@@ -26,8 +26,8 @@ function App() {
     <Router basename={`${process.env.NODE_ENV === 'production' ? '/bodegas' : ''}`}>
       <Routes>
         <Route element={<PrimaryLayout clientes={CLIENTES} />}>
-          <Route path="/" element={<Bodegas bodegas={BODEGAS} />} />
-          <Route path="/bodega/:id" element={<Bodega inventarios={inventarios} />} />
+          <Route path="/" element={<Bodegas bodegas={inventarios} />} />
+          <Route path="/bodega/:id" element={<Bodega />} />
           <Route path="/lotes/:id" element={<Lotes />} />
         </Route>
         <Route element={<SecondaryLayout />}>

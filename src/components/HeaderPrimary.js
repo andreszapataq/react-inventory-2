@@ -7,10 +7,9 @@ import Modal from "./Modal"
 const HeaderPrimary = ({clientes}) => {
   let { id } = useParams()
   let location = useLocation()
-  const bodega = location.state?.bodega?.nombre
-  const cliente = location.state?.bodega?.cliente
-  const nombre = location.state?.referencia?.nombre
-  const codigo = location.state?.referencia?.codigo
+
+  const {nombre_bodega = "", cliente = "", id_number = ""} = location.state?.bodega || {}
+  const {nombre = "", codigo = ""} = location.state?.referencia || {}
 
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -32,8 +31,8 @@ const HeaderPrimary = ({clientes}) => {
       )}
       {location.pathname.includes('/bodega/') && (
         <div className="grid grid-rows-3 py-8 justify-items-center">
-          <h1 className="text-3xl font-semibold">{bodega}</h1>
-          <p className="text-xl">{cliente}</p>
+          <h1 className="text-3xl font-semibold">{nombre_bodega}</h1>
+          <p className="text-xl">{cliente} - {id_number}</p>
           <Link to={`/despacho/${id}`}>
             <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer">Crear despacho</p>
           </Link>
@@ -45,7 +44,7 @@ const HeaderPrimary = ({clientes}) => {
           <p className="text-xl">{codigo}</p>
           <div className="flex">
             <FaWarehouse className="fill-raisin-black mr-2" />
-            <p className="text-xs text-raisin-black"><span className="font-light">Bodega actual: </span>Hospital San José - Hospital San José de Popayán E.S.E.</p>
+            <p className="text-xs text-raisin-black"><span className="font-light">Bodega actual: </span>{nombre_bodega} - {cliente}</p>
           </div>
         </div>
       )}
