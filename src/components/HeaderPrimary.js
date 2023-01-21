@@ -9,7 +9,7 @@ const HeaderPrimary = ({clientes}) => {
   let location = useLocation()
 
   const {nombre_bodega = "", cliente = "", id_number = ""} = location.state?.bodega || {}
-  const {nombre = "", codigo = ""} = location.state?.referencia || {}
+  const {nombre = "", codigo = "", cantidad = ""} = location.state?.referencia || {}
 
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -40,7 +40,10 @@ const HeaderPrimary = ({clientes}) => {
       )}
       {location.pathname.includes('/lotes/') && (
         <div className="grid grid-rows-3 py-8 justify-items-center">
-          <h1 className="text-3xl font-semibold">{nombre}</h1>
+          <div className="flex">
+            <h1 className="text-3xl font-semibold">{nombre}</h1>
+            <div className="w-5 h-5 flex justify-center items-center rounded-full bg-raisin-black ml-1"><p className="text-white text-center text-[9px]">{cantidad}</p></div>
+          </div>
           <p className="text-xl">{codigo}</p>
           <div className="flex">
             <FaWarehouse className="fill-raisin-black mr-2" />
