@@ -8,8 +8,7 @@ import Lotes from "./pages/Lotes"
 import Lote from "./pages/Lote"
 import Despacho from "./pages/Despacho";
 
-import {BODEGAS,
-        INVENTARIO_PRINCIPAL,
+import {INVENTARIO_PRINCIPAL,
         INVENTARIO_SAN_JOSE_SAN_JOSE,
         INVENTARIO_SAN_JOSE_MEGATECNOLOGIA
 } from './data'
@@ -30,7 +29,7 @@ function App() {
           <Route path="/lotes/:id" element={<Lotes />} />
         </Route>
         <Route element={<SecondaryLayout />}>
-          <Route path="/lote/:id" element={<Lote bodegas={BODEGAS} />} />
+          <Route path="/lote/:id" element={<Lote bodegas={inventarios} />} />
         </Route>
         <Route path="/despacho/:id" element={<Despacho />} />
       </Routes>

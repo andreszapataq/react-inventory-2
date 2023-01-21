@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 
 import DropdownSearch from "../components/DropdownSearch"
 import LoteLog from "../components/LoteLog"
@@ -6,13 +6,16 @@ import Button from "../components/Button"
 
 function Lote({bodegas}) {
   const navigate = useNavigate()
+  let location = useLocation()
+
+  const {nombre_bodega = "", cliente = "", id_number = ""} = location.state?.bodega || {}
 
   return (
     <div className="flex flex-col gap-14">
       <div>
         <h2 className="text-2xl font-medium mb-3">Bodega actual</h2>
-        <p className="text-lg font-semibold">Hospital San José</p>
-        <p className="text-xs font-light">Hospital San José de Popayán E.S.E. - 891580002</p>
+        <p className="text-lg font-semibold">{nombre_bodega}</p>
+        <p className="text-xs font-light">{cliente} - {id_number}</p>
       </div>
       <div>
         <h2 className="text-2xl font-medium mb-3">Trasladar a</h2>

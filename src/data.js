@@ -1,36 +1,3 @@
-export const CLIENTES = [
-    {
-        nombre: 'Vive Solutions',
-        id_type: 'NIT.',
-        id_number: '900274934'
-    },
-    {
-        nombre: 'Hospital San José de Popayán E.S.E.',
-        id_type: 'NIT.',
-        id_number: '891580002'
-    },
-    {
-        nombre: 'Megatecnología y Rehabilitación Colombiana',
-        id_type: 'NIT.',
-        id_number: '900094992'
-    }
-]
-
-export const BODEGAS = [
-    {
-        nombre: 'Principal',
-        cliente: 'Vive Solutions - 900274934'
-    },
-    {
-        nombre: 'Hospital San José',
-        cliente: 'Hospital San José de Popayán E.S.E. - 891580002'
-    },
-    {
-        nombre: 'Hospital San José',
-        cliente: 'Megatecnología y Rehabilitación Colombiana - 900094992'
-    }
-]
-
 export const INVENTARIO_PRINCIPAL = {
     nombre_bodega: 'Principal',
     cliente: 'Vive Solutions',

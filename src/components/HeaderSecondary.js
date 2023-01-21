@@ -3,8 +3,10 @@ import {FaBoxOpen} from 'react-icons/fa'
 
 const HeaderSecondary = () => {
   let location = useLocation()
+
   const lote = location.state?.lote?.lote
   const fecha_vencimiento = location.state?.lote?.fecha_vencimiento
+  const {nombre = "", codigo = ""} = location.state?.referencia || {}
 
   return (
     <div className="grid grid-rows-3">
@@ -13,7 +15,7 @@ const HeaderSecondary = () => {
       <div>
         <div className="flex">
           <FaBoxOpen className="fill-raisin-black mr-2" />
-          <p className="text-xs text-raisin-black"><span className="font-light">Referencia actual: </span>DBM Putty 5.00 CC - AT679FD</p>
+          <p className="text-xs text-raisin-black"><span className="font-light">Referencia actual: </span>{nombre} - {codigo}</p>
         </div>
         <div className="w-full h-px bg-cadet-blue-crayola mt-5"></div>
       </div>
