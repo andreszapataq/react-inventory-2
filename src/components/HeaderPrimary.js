@@ -42,7 +42,7 @@ const HeaderPrimary = ({clientes}) => {
         <div className="grid grid-rows-3 py-8 justify-items-center">
           <div className="flex">
             <h1 className="text-3xl font-semibold">{nombre}</h1>
-            <div className="w-5 h-5 flex justify-center items-center rounded-full bg-raisin-black ml-1"><p className="text-white text-center text-[9px]">{cantidad}</p></div>
+            <div className="w-5 h-5 flex justify-center items-center rounded-full bg-green-300 ml-1"><p className="text-center text-[9px]">{cantidad}</p></div>
           </div>
           <p className="text-xl">{codigo}</p>
           <div className="flex">
