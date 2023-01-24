@@ -11,6 +11,9 @@ const HeaderPrimary = ({clientes}) => {
   const {nombre_bodega = "", cliente = "", id_number = ""} = location.state?.bodega || {}
   const {nombre = "", codigo = "", cantidad = ""} = location.state?.referencia || {}
 
+  const bodega = location.state?.bodega
+  console.log(bodega)
+
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const toggleModal = () => {
@@ -33,7 +36,7 @@ const HeaderPrimary = ({clientes}) => {
         <div className="grid grid-rows-3 py-8 justify-items-center">
           <h1 className="text-3xl font-semibold">{nombre_bodega}</h1>
           <p className="text-xl">{cliente} - {id_number}</p>
-          <Link to={`/despacho/${id}`}>
+          <Link to={`/despacho/${id}`} state={{bodega}}>
             <p className="flex items-end text-xs underline text-cerulean-blue cursor-pointer">Crear despacho</p>
           </Link>
         </div>

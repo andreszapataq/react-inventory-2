@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { MdSwapHoriz } from 'react-icons/md'
 import { FaSearch } from 'react-icons/fa'
 
-const HeaderDespacho = () => {
+const HeaderDespacho = ({nombre_bodega, cliente, id_number}) => {
   const [reverse, setReverse] = useState(false)
 
   const handleSwap = () => {
@@ -13,8 +13,8 @@ const HeaderDespacho = () => {
     <div className='grid grid-cols-3'>
       <div className={`w-[428px] ${reverse ? "order-last justify-self-end" : "order-first"}`}>
         <p className='font-light text-xs'>{reverse ? 'Hacia' : 'Desde'}</p>
-        <p className='font-semibold text-2xl'>Principal</p>
-        <p className='font-light text-sm'>Vive Solutions - 900274934</p>
+        <p className='font-semibold text-2xl'>{nombre_bodega}</p>
+        <p className='font-light text-sm'>{cliente} - {id_number}</p>
       </div>
       <div className='justify-self-center self-center'>
         <MdSwapHoriz size={37} className="fill-raisin-black cursor-pointer" onClick={handleSwap} />
