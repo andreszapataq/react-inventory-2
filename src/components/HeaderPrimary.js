@@ -8,11 +8,9 @@ const HeaderPrimary = ({clientes}) => {
   let { id } = useParams()
   let location = useLocation()
 
+  const bodega = location.state?.bodega
   const {nombre_bodega = "", cliente = "", id_number = ""} = location.state?.bodega || {}
   const {nombre = "", codigo = "", cantidad = ""} = location.state?.referencia || {}
-
-  const bodega = location.state?.bodega
-  console.log(bodega)
 
   const [isModalOpen, setIsModalOpen] = useState(false)
 
