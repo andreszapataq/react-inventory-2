@@ -3,7 +3,7 @@ import { MdIosShare } from "react-icons/md"
 import Button from "./Button"
 import ResumenRow from "./ResumenRow"
 
-const ResumenCard = ({selectedItems}) => {
+const ResumenCard = ({selectedItems, onSelect}) => {
   console.log(selectedItems)
 
   return (
@@ -24,7 +24,7 @@ const ResumenCard = ({selectedItems}) => {
       </div>
       <div className="h-full flex flex-col gap-5">
         {selectedItems.map((item, index) => (
-          <ResumenRow key={index} item={item} />
+          <ResumenRow key={index} item={item} onSelect={onSelect} />
         ))}
       </div>
       <div className="flex justify-end gap-3">

@@ -1,6 +1,6 @@
 import { FaTimes } from "react-icons/fa"
 
-const ResumenRow = ({item}) => {
+const ResumenRow = ({item, onSelect}) => {
   return (
     <div className="flex justify-between">
       <div>
@@ -8,7 +8,7 @@ const ResumenRow = ({item}) => {
         <p className="text-[9px] font-light">{item.fecha_vencimiento}</p>
       </div>
       <p className="text-[9px]">{item.lote}</p>
-      <FaTimes size={12} className="fill-cool-grey cursor-pointer" onClick={() => console.log("FaTimes pressed")} />
+      <FaTimes size={12} className="fill-cool-grey cursor-pointer" onClick={() => onSelect(item)} />
     </div>
   )
 }
