@@ -4,6 +4,8 @@ import { FaCheckCircle } from "react-icons/fa"
 const DespachoRow = ({item, onSelect}) => {
   const [check, setCheck] = useState(false)
 
+  console.log(item)
+
   const handleCheck = () => {
     setCheck(!check)
   }

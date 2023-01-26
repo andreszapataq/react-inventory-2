@@ -1,1 +1,1 @@
-# React Inventory + tailwindcss
+# React Inventory + Tailwind CSS
