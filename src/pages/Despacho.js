@@ -8,6 +8,7 @@ import DespachoRow from "../components/DespachoRow"
 
 function Despacho() {
   const [selectedItems, setSelectedItems] = useState([])
+  const [check, setCheck] = useState(false)
 
   let location = useLocation()
 
