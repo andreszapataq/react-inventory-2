@@ -1,12 +1,7 @@
-import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 
 const ResumenRow = ({ item, onSelect, onCheck }) => {
-  // const [check, setCheck] = useState(false);
-
   const handleClick = () => {
-    // onCheck(item)
-    // setCheck(!check)
     onSelect(item);
   };
 
