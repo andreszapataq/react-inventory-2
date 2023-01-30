@@ -16,6 +16,10 @@ function Despacho() {
 
   const {nombre_bodega = "", cliente = "", id_number = "", stock = ""} = location.state?.bodega || {}
 
+  const handleCheck = () => {
+    setCheck(!check)
+  }
+
   function handleSelect(item) {
     let index = selectedItems.findIndex(i => i.codigo === item.codigo && i.lote === item.lote);
     if (index === -1) {
