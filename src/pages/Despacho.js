@@ -50,7 +50,7 @@ function Despacho() {
         <div className="w-2/3 flex flex-col">
           <SearchBar />
           {newStock.map((item, index) => (
-            <DespachoRow key={index} item={item} onSelect={handleSelect} />
+            <DespachoRow key={index} item={item} onSelect={handleSelect} onCheck={handleCheck} />
           ))}
         </div>
         <div className="w-1/3 flex flex-col items-end">
