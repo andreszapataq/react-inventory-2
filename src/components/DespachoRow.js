@@ -4,13 +4,8 @@ import { FaCheckCircle } from "react-icons/fa"
 const DespachoRow = ({item, onSelect}) => {
   const [check, setCheck] = useState(false)
 
-  const handleCheck = () => {
-    setCheck(!check)
-  }
-
   return (
     <div className="w-3/5 flex justify-between items-center bg-cultured rounded-lg pl-8 pr-4 py-4 mb-4 cursor-pointer" onClick={() => {
-      handleCheck()
       onSelect(item)}}>
       <div>
         <h2 className="text-lg font-semibold">{item.lote}</h2>
