@@ -1,6 +1,14 @@
+import { useState } from "react"
 import { FaTimes } from "react-icons/fa"
 
-const ResumenRow = ({item, onSelect}) => {
+const ResumenRow = ({item, onSelect, onCheck}) => {
+  const [check, setCheck] = useState(false)
+
+  const handleClick = () => {
+    onCheck()
+    setCheck(!check)
+  }
+
   return (
     <div className="flex justify-between">
       <div>
@@ -8,7 +16,9 @@ const ResumenRow = ({item, onSelect}) => {
         <p className="text-[9px] font-light">{item.fecha_vencimiento}</p>
       </div>
       <p className="text-[9px]">{item.lote}</p>
-      <FaTimes size={12} className="fill-cool-grey cursor-pointer" onClick={() => onSelect(item)} />
+      <FaTimes size={12} className="fill-cool-grey cursor-pointer" onClick={() => {
+        handleClick()
+        onSelect(item)}} />
     </div>
   )
 }
