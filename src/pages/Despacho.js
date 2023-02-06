@@ -21,7 +21,7 @@ function Despacho() {
   function handleSelect(item) {
     let index = selectedItems.findIndex(i => i.codigo === item.codigo && i.lote === item.lote);
     if (index === -1) {
-        setSelectedItems([...selectedItems, item]);
+        setSelectedItems([...selectedItems, {item, check: check}]);
     } else {
         let newSelectedItems = [...selectedItems];
         newSelectedItems.splice(index, 1);
@@ -35,7 +35,8 @@ function Despacho() {
         codigo: item.codigo,
         nombre: item.nombre,
         lote: lote.lote,
-        fecha_vencimiento: lote.fecha_vencimiento
+        fecha_vencimiento: lote.fecha_vencimiento,
+        check: check
       }
     })
   }).flat()

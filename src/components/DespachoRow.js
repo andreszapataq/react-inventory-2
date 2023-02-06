@@ -2,6 +2,8 @@ import { useState } from "react"
 import { FaCheckCircle } from "react-icons/fa"
 
 const DespachoRow = ({item, onSelect, onCheck}) => {
+  console.log(item)
+
   const [check, setCheck] = useState(false)
 
   const handleClick = () => {
