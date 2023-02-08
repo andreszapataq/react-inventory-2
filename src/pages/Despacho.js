@@ -53,7 +53,7 @@ function Despacho() {
           ))}
         </div>
         <div className="w-1/3 flex flex-col items-end">
-          <ResumenCard selectedItems={selectedItems} onSelect={handleSelect} onCheck={handleCheck} />
+          <ResumenCard selectedItems={selectedItems} onSelect={handleSelect} onCheck={handleCheck} check={check} />
         </div>
       </div>
     </div>
