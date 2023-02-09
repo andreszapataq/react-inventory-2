@@ -3,7 +3,7 @@ import { MdIosShare } from "react-icons/md"
 import Button from "./Button"
 import ResumenRow from "./ResumenRow"
 
-const ResumenCard = ({selectedItems, onSelect, onCheck}) => {
+const ResumenCard = ({selectedItems, onSelect, onCheck, check}) => {
   return (
     <div className="w-[428px] h-[569px] flex flex-col border rounded-lg shadow-lg p-4">
       <div className="grid gap-3 grid-rows-3">
