@@ -21,7 +21,7 @@ function Despacho() {
   function handleSelect(item) {
     let index = selectedItems.findIndex(i => i.codigo === item.codigo && i.lote === item.lote);
     if (index === -1) {
-        setSelectedItems([...selectedItems, {item, check: check}]);
+        setSelectedItems([...selectedItems, item]);
     } else {
         let newSelectedItems = [...selectedItems];
         newSelectedItems.splice(index, 1);
@@ -35,8 +35,7 @@ function Despacho() {
         codigo: item.codigo,
         nombre: item.nombre,
         lote: lote.lote,
-        fecha_vencimiento: lote.fecha_vencimiento,
-        check: check
+        fecha_vencimiento: lote.fecha_vencimiento
       }
     })
   }).flat()
@@ -53,7 +52,7 @@ function Despacho() {
           ))}
         </div>
         <div className="w-1/3 flex flex-col items-end">
-          <ResumenCard selectedItems={selectedItems} onSelect={handleSelect} onCheck={handleCheck} check={check} />
+          <ResumenCard selectedItems={selectedItems} onSelect={handleSelect} onCheck={handleCheck} />
         </div>
       </div>
     </div>
