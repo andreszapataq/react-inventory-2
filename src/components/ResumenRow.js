@@ -5,8 +5,9 @@ const ResumenRow = ({item, onSelect, onCheck}) => {
   const [check, setCheck] = useState(false)
 
   const handleClick = () => {
-    onCheck()
+    onCheck(item)
     setCheck(!check)
+    onSelect(item)
   }
 
   return (
@@ -16,9 +17,7 @@ const ResumenRow = ({item, onSelect, onCheck}) => {
         <p className="text-[9px] font-light">{item.fecha_vencimiento}</p>
       </div>
       <p className="text-[9px]">{item.lote}</p>
-      <FaTimes size={12} className="fill-cool-grey cursor-pointer" onClick={() => {
-        handleClick()
-        onSelect(item)}} />
+      <FaTimes size={12} className="fill-cool-grey cursor-pointer" onClick={handleClick} />
     </div>
   )
 }

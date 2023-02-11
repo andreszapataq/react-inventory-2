@@ -8,25 +8,22 @@ import DespachoRow from "../components/DespachoRow"
 
 function Despacho() {
   const [selectedItems, setSelectedItems] = useState([])
-  const [check, setCheck] = useState(false)
 
   let location = useLocation()
 
   const {nombre_bodega = "", cliente = "", id_number = "", stock = ""} = location.state?.bodega || {}
 
-  const handleCheck = () => {
-    setCheck(!check)
-  }
-
   function handleSelect(item) {
     let index = selectedItems.findIndex(i => i.codigo === item.codigo && i.lote === item.lote);
+    let newSelectedItems = [...selectedItems];
+  
     if (index === -1) {
-        setSelectedItems([...selectedItems, item]);
+      newSelectedItems.push({...item, selected: true});
     } else {
-        let newSelectedItems = [...selectedItems];
-        newSelectedItems.splice(index, 1);
-        setSelectedItems(newSelectedItems);
+      newSelectedItems.splice(index, 1);
     }
+  
+    setSelectedItems(newSelectedItems);
   }
 
   const newStock = stock.map(item => {
@@ -35,7 +32,8 @@ function Despacho() {
         codigo: item.codigo,
         nombre: item.nombre,
         lote: lote.lote,
-        fecha_vencimiento: lote.fecha_vencimiento
+        fecha_vencimiento: lote.fecha_vencimiento,
+        selected: false
       }
     })
   }).flat()
@@ -48,15 +46,16 @@ function Despacho() {
         <div className="w-2/3 flex flex-col">
           <SearchBar />
           {newStock.map((item, index) => (
-            <DespachoRow key={index} item={item} onSelect={handleSelect} onCheck={handleCheck} check={check} />
+            <DespachoRow key={index} item={item} onSelect={handleSelect} />
           ))}
         </div>
         <div className="w-1/3 flex flex-col items-end">
-          <ResumenCard selectedItems={selectedItems} onSelect={handleSelect} onCheck={handleCheck} />
+          <ResumenCard selectedItems={selectedItems} onSelect={handleSelect} />
         </div>
       </div>
     </div>
   )
 }
+
 
 export default Despacho
