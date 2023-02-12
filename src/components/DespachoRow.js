@@ -1,14 +1,14 @@
-// import { useState } from "react"
+import { useState } from "react"
 import { FaCheckCircle } from "react-icons/fa"
 
 const DespachoRow = ({item, onSelect}) => {
-  // const [selected, setSelected] = useState(false)
+  const [selected, setSelected] = useState(false)
 
   console.log(item)
 
   const handleClick = () => {
-    onSelect(item)
-    // setSelected(!selected)
+    setSelected(!selected)
+    onSelect({ ...item, selected: !item.selected })
   }
 
   return (
@@ -20,7 +20,7 @@ const DespachoRow = ({item, onSelect}) => {
       <div className="flex justify-end items-center">
         <div className="h-12 w-px bg-green-300 mr-8"></div>
         <p className="text-xs font-light">{item.fecha_vencimiento}</p>
-        {item.selected ? <FaCheckCircle size={13} className="self-start fill-raisin-black" /> : <div className="w-[13px] h-[13px] self-start rounded-full border border-cool-grey"></div>}
+        {selected ? <FaCheckCircle size={13} className="self-start fill-raisin-black" /> : <div className="w-[13px] h-[13px] self-start rounded-full border border-cool-grey"></div>}
       </div>
     </div>
   )

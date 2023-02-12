@@ -15,16 +15,15 @@ function Despacho() {
 
   function handleSelect(item) {
     let index = selectedItems.findIndex(i => i.codigo === item.codigo && i.lote === item.lote);
-    let newSelectedItems = [...selectedItems];
   
     if (index === -1) {
-      newSelectedItems.push({...item, selected: true});
+      setSelectedItems([...selectedItems, {...item, selected: true}]);
     } else {
-      newSelectedItems.splice(index, 1);
+      let newSelectedItems = [...selectedItems];
+      newSelectedItems[index].selected = !newSelectedItems[index].selected;
+      setSelectedItems(newSelectedItems);
     }
-  
-    setSelectedItems(newSelectedItems);
-  }
+  }  
 
   const newStock = stock.map(item => {
     return item.lotes.map(lote => {
