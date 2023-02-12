@@ -6,7 +6,6 @@ const DespachoRow = ({ item, onSelect, selected }) => {
 
   const handleClick = () => {
     // setSelected(!selected)
-    console.log("gz ssdafdasf", item);
     onSelect({ ...item, selected: !item.selected });
   };
 
