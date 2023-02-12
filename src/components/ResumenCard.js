@@ -6,7 +6,6 @@ import ResumenRow from "./ResumenRow"
 
 const ResumenCard = ({selectedItems, onSelect, onCheck}) => {
   // const [selectedItems, setSelectedItems] = useState([])
-
   /* const handleCheck = (item) => {
     let index = selectedItems.findIndex(i => i.codigo === item.codigo && i.lote === item.lote);
     let newSelectedItems = [...selectedItems];
@@ -19,7 +18,6 @@ const ResumenCard = ({selectedItems, onSelect, onCheck}) => {
   
     setSelectedItems(newSelectedItems);
   } */
-  
 
   return (
     <div className="w-[428px] h-[569px] flex flex-col border rounded-lg shadow-lg p-4">
