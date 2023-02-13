@@ -20,13 +20,7 @@ function Despacho() {
   } = location.state?.bodega || {};
 
   function handleSelect(item) {
-    let newSelected = selected;
-    newSelected = {
-      ...newSelected,
-      [item.lote]: !selected[item.lote],
-    };
-    setSelected(newSelected);
-    // **********************
+    console.log(!selected[item.lote])
     setSelected((prev) => ({
       ...prev,
       [item.lote]: !selected[item.lote],
