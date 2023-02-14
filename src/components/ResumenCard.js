@@ -1,24 +1,9 @@
-// import { useState } from "react"
 import { MdIosShare } from "react-icons/md"
 
 import Button from "./Button"
 import ResumenRow from "./ResumenRow"
 
 const ResumenCard = ({selectedItems, onSelect, onCheck}) => {
-  // const [selectedItems, setSelectedItems] = useState([])
-  /* const handleCheck = (item) => {
-    let index = selectedItems.findIndex(i => i.codigo === item.codigo && i.lote === item.lote);
-    let newSelectedItems = [...selectedItems];
-  
-    if (index === -1) {
-      newSelectedItems.push({...item, selected: true});
-    } else {
-      newSelectedItems.splice(index, 1);
-    }
-  
-    setSelectedItems(newSelectedItems);
-  } */
-
   return (
     <div className="w-[428px] h-[569px] flex flex-col border rounded-lg shadow-lg p-4">
       <div className="grid gap-3 grid-rows-3">
