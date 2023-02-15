@@ -7,6 +7,7 @@ import Bodega from "./pages/Bodega"
 import Lotes from "./pages/Lotes"
 import Lote from "./pages/Lote"
 import Despacho from "./pages/Despacho";
+import Despachos from "./pages/Despachos";
 
 import {INVENTARIO_PRINCIPAL,
         INVENTARIO_SAN_JOSE_SAN_JOSE,
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Bodegas bodegas={inventarios} />} />
           <Route path="/bodega/:id" element={<Bodega />} />
           <Route path="/lotes/:id" element={<Lotes />} />
+          <Route path="/despachos" element={<Despachos />} />
         </Route>
         <Route element={<SecondaryLayout />}>
           <Route path="/lote/:id" element={<Lote bodegas={inventarios} />} />

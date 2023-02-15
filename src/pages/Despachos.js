@@ -1,6 +1,8 @@
 function Despachos() {
   return (
-    <div>Despachos</div>
+    <div>
+      
+    </div>
   )
 }
 

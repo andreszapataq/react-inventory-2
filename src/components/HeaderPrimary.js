@@ -52,6 +52,13 @@ const HeaderPrimary = ({clientes}) => {
           </div>
         </div>
       )}
+      {location.pathname === "/despachos" && (
+        <div className="grid grid-rows-3 w-full py-8 justify-items-center">
+          <p></p>
+          <h1 className="text-3xl font-semibold">Despachos</h1>
+          <p></p>
+        </div>
+      )}
     </div>
   )
 }
