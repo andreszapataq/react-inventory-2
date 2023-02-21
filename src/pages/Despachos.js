@@ -3,7 +3,7 @@ import DespachosRow from "../components/DespachosRow"
 
 function Despachos() {
   return (
-    <div className="w-4/5">
+    <div className="w-full">
       <DespachosMenu />
       <DespachosRow />
     </div>
