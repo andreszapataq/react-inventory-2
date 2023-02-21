@@ -1,11 +1,11 @@
 const DespachosMenu = () => {
   return (
-    <div className="flex w-4/5 lg:w-1/2">
-      <p>Fecha</p>
-      <p>No. Remisión</p>
-      <p>Cliente</p>
-      <p>Estado</p>
-      <p>Gestión</p>
+    <div className="flex justify-between pb-5">
+      <p className="underline cursor-pointer">Fecha</p>
+      <p className="underline cursor-pointer">No. Remisión</p>
+      <p className="underline cursor-pointer">Cliente</p>
+      <p className="underline cursor-pointer">Estado</p>
+      <p className="underline cursor-pointer">Gestión</p>
     </div>
   )
 }
