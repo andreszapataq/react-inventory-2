@@ -3,8 +3,6 @@ import ItemContainer from "../components/ItemContainer"
 import BodegaRow from "../components/BodegaRow"
 
 function Bodegas({bodegas}) {
-  console.log(bodegas)
-
   return (
     <ItemContainer>
       {bodegas.map((bodega, index) => (
