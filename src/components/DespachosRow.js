@@ -8,7 +8,7 @@ const DespachosRow = () => {
       <p className="text-sm">11 Nov. 2023</p>
       <p className="text-sm">11323</p>
       <p className="text-sm">Clínica del Café</p>
-      <p className="text-sm text-carrot-orange">En transito</p>
+      <p className="text-sm text-malachite">Entregado</p>
       <div className='flex w-2/5 justify-between'>
         <FaFilePdf className='cursor-pointer' />
         <BsCloudUpload className='cursor-pointer' />
