@@ -5,6 +5,8 @@ import { FaSearch } from 'react-icons/fa'
 const HeaderDespacho = ({nombre_bodega, cliente, id_number}) => {
   const [reverse, setReverse] = useState(false)
 
+  console.log(cliente)
+
   const handleSwap = () => {
     setReverse(!reverse)
   }
