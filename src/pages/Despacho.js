@@ -50,7 +50,7 @@ function Despacho() {
         };
       });
     })
-    .flat();
+  .flat();
 
   return (
     <div className="flex flex-col gap-11 p-10">
