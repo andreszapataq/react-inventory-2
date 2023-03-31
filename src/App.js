@@ -8,6 +8,7 @@ import Lotes from "./pages/Lotes"
 import Lote from "./pages/Lote"
 import Despacho from "./pages/Despacho";
 import Despachos from "./pages/Despachos";
+import Remision from "./components/Remision";
 
 import {INVENTARIO_PRINCIPAL,
         INVENTARIO_SAN_JOSE_SAN_JOSE,
@@ -34,6 +35,7 @@ function App() {
           <Route path="/lote/:id" element={<Lote bodegas={inventarios} />} />
         </Route>
         <Route path="/despacho/:id" element={<Despacho />} />
+        <Route path="/pdf" element={<Remision />} />
       </Routes>
     </Router>
   );
