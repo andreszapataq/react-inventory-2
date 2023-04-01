@@ -4,8 +4,16 @@ Font.register({
     family: 'Outfit',
     fonts: [
         {
-            src: 'https://fonts.gstatic.com/s/outfit/v10/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4G-EiAou6Y.ttf',
+            src: 'https://fonts.gstatic.com/s/outfit/v10/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4G-EiAou6Y.ttf'
         },
+        {
+            src: 'https://fonts.gstatic.com/s/outfit/v10/QGYyz_MVcBeNP4NjuGObqx1XmO1I4W61C4G-EiAou6Y.ttf',
+            fontWeight: 'light'
+        },
+        {
+            src: 'https://fonts.gstatic.com/s/outfit/v10/QGYyz_MVcBeNP4NjuGObqx1XmO1I4QK1C4G-EiAou6Y.ttf',
+            fontWeight: 'medium'
+        }
     ]
 })
 
@@ -36,7 +44,7 @@ const Remision = () => {
                 <Page size="LETTER" style={styles.page}>
                     <View style={styles.section}>
                         <Text>Logo</Text>
-                        <Text>Remisión No. 0003</Text>
+                        <Text style={{fontWeight: 'medium'}}>Remisión No. 0003</Text>
                     </View>
                     <View style={styles.section}>
                         <Text>Fecha</Text>
