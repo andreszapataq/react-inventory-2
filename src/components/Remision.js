@@ -20,17 +20,20 @@ Font.register({
 // Create styles
 const styles = StyleSheet.create({
     page: {
-      backgroundColor: "white",
-      color: "black",
-      fontFamily: "Outfit"
+        backgroundColor: 'white',
+        color: 'black',
+        fontFamily: 'Outfit'
     },
     section: {
-      margin: 10,
-      padding: 10,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        margin: 10,
+        padding: 10,
     },
     viewer: {
-      width: window.innerWidth, //the pdf viewer will take up all of the width and height
-      height: window.innerHeight,
+        width: window.innerWidth, //the pdf viewer will take up all of the width and height
+        height: window.innerHeight,
     },
 });
   
@@ -44,10 +47,12 @@ const Remision = () => {
                 <Page size="LETTER" style={styles.page}>
                     <View style={styles.section}>
                         <Text>Logo</Text>
-                        <Text style={{fontWeight: 'medium'}}>Remisión No. 0003</Text>
+                        <View>
+                            <Text style={{fontWeight: 'medium'}}>Remisión No. 0003</Text>
+                            <Text style={{fontSize: 9}}>Fecha</Text>
+                        </View>
                     </View>
                     <View style={styles.section}>
-                        <Text>Fecha</Text>
                     </View>
                 </Page>
             </Document>
