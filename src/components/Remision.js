@@ -22,9 +22,9 @@ const styles = StyleSheet.create({
     page: {
         backgroundColor: 'white',
         color: 'black',
-        fontFamily: 'Outfit'
+        fontFamily: 'Outfit',
     },
-    section: {
+    header: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -45,11 +45,11 @@ const Remision = () => {
             <Document>
                 {/*render a single page*/}
                 <Page size="LETTER" style={styles.page}>
-                    <View style={styles.section}>
+                    <View style={styles.header}>
                         <Text>Logo</Text>
                         <View>
                             <Text style={{fontWeight: 'medium'}}>Remisión No. 0003</Text>
-                            <Text style={{fontSize: 9}}>Fecha</Text>
+                            <Text style={{fontSize: 9, color: '#777777'}}>Fecha</Text>
                         </View>
                     </View>
                     <View style={styles.section}>
