@@ -8,7 +8,7 @@ import Lotes from "./pages/Lotes"
 import Lote from "./pages/Lote"
 import Despacho from "./pages/Despacho";
 import Despachos from "./pages/Despachos";
-import Remision from "./components/Remision";
+import Remision from "./components/Remision/Remision";
 
 import {INVENTARIO_PRINCIPAL,
         INVENTARIO_SAN_JOSE_SAN_JOSE,
