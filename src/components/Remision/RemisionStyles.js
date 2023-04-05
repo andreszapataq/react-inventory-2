@@ -22,29 +22,54 @@ const styles = StyleSheet.create({
         width: window.innerWidth,
         height: window.innerHeight,
     },
+    page: {
+        backgroundColor: 'white',
+        color: 'black',
+        fontFamily: 'Outfit',
+        padding: 40
+    },
     textTitle_s: {
         fontSize: 10,
+        color: '#777777'
+    },
+    textTitle_m: {
+        fontSize: 11,
         color: '#777777'
     },
     textInfo_s: {
         fontSize: 10
     },
-    page: {
-        backgroundColor: 'white',
-        color: 'black',
-        fontFamily: 'Outfit',
+    textInfo_m: {
+        fontSize: 11
     },
     header: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        margin: 10,
-        padding: 10,
+        marginBottom: 13
     },
-    headerOneRow: {
+    headerRow: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between'
+    },
+    divider: {
+        width: '100%',
+        height: 0.5,
+        backgroundColor: '#777777',
+        marginBottom: 13
+    },
+    datosRow: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 16
+    },
+    datosColumn_1: {
+        flexBasis: '40%'
+    },
+    datosColumns: {
+        flexBasis: '22%'
     }
 });
 
