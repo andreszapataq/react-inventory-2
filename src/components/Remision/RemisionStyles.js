@@ -36,6 +36,13 @@ const styles = StyleSheet.create({
         fontSize: 11,
         color: '#777777'
     },
+    textTitle_xl: {
+        fontSize: 17,
+        fontWeight: 'medium'
+    },
+    textInfo_xs: {
+        fontSize: 9
+    },
     textInfo_s: {
         fontSize: 10
     },
@@ -63,13 +70,31 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginBottom: 16
+        marginBottom: 13
     },
     datosColumn_1: {
         flexBasis: '40%'
     },
     datosColumns: {
         flexBasis: '22%'
+    },
+    menuBar: {
+        width: '100%',
+        height: 23,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        backgroundColor: '#EBEBEB',
+        marginBottom: 13
+    },
+    itemRow: {
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginBottom: 13
     }
 });
 

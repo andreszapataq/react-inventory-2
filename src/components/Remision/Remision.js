@@ -10,7 +10,7 @@ const Remision = () => {
                     <View style={styles.header}>
                         <LogoVive />
                         <View>
-                            <Text style={{fontWeight: 'medium'}}>Remisión No. 0003</Text>
+                            <Text style={styles.textTitle_xl}>Remisión No. 0003</Text>
                             <Text style={styles.textTitle_s}>Fecha</Text>
                             <View style={styles.headerRow}>
                                 <Text style={styles.textInfo_s}>16 marzo 2023</Text>
@@ -43,8 +43,32 @@ const Remision = () => {
                             <Text style={styles.textInfo_m}>1001975331</Text>
                         </View>
                         <View style={styles.datosColumns}>
-                            
+
                         </View>
+                    </View>
+                    <View style={styles.menuBar}>
+                        <Text style={styles.textTitle_s}>Código</Text>
+                        <Text style={styles.textTitle_s}>Descripción</Text>
+                        <Text style={styles.textTitle_s}>Fecha de Vencimiento</Text>
+                        <Text style={styles.textTitle_s}>Lote</Text>
+                    </View>
+                    <View style={styles.itemRow}>
+                        <Text style={styles.textInfo_xs}>AT680FD</Text>
+                        <Text style={styles.textInfo_xs}>DBM Putty 10.0 CC</Text>
+                        <Text style={styles.textInfo_xs}>23/03/2025</Text>
+                        <Text style={styles.textInfo_xs}>LET28033345-17</Text>
+                    </View>
+                    <View style={styles.itemRow}>
+                        <Text style={styles.textInfo_xs}>AT680FD</Text>
+                        <Text style={styles.textInfo_xs}>DBM Putty 10.0 CC</Text>
+                        <Text style={styles.textInfo_xs}>25/07/2025</Text>
+                        <Text style={styles.textInfo_xs}>MORA32727425-28</Text>
+                    </View>
+                    <View style={styles.itemRow}>
+                        <Text style={styles.textInfo_xs}>AT680FD</Text>
+                        <Text style={styles.textInfo_xs}>DBM Putty 10.0 CC</Text>
+                        <Text style={styles.textInfo_xs}>25/07/2025</Text>
+                        <Text style={styles.textInfo_xs}>MORA32727425-29</Text>
                     </View>
                 </Page>
             </Document>
