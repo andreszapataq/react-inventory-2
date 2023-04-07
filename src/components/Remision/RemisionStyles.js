@@ -89,7 +89,6 @@ const styles = StyleSheet.create({
         marginBottom: 13
     },
     itemRow: {
-        width: '100%',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-around',
