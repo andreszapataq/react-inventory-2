@@ -94,7 +94,10 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         marginBottom: 13
-    }
+    },
+    itemColumn: {
+        flexBasis: '8%'
+    },
 });
 
 export default styles
