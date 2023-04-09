@@ -47,28 +47,40 @@ const Remision = () => {
                         </View>
                     </View>
                     <View style={styles.menuBar}>
-                        <Text style={styles.textTitle_s}>Código</Text>
-                        <Text style={styles.textTitle_s}>Descripción</Text>
-                        <Text style={styles.textTitle_s}>Fecha de Vencimiento</Text>
-                        <Text style={styles.textTitle_s}>Lote</Text>
+                        <Text style={styles.textTitle_s1}>Código</Text>
+                        <Text style={styles.textTitle_s2}>Descripción</Text>
+                        <Text style={styles.textTitle_s4}>Lote</Text>
+                        <Text style={styles.textTitle_s3}>Fecha de Vencimiento</Text>
                     </View>
-                    <View style={styles.itemRow}>
-                        <Text style={styles.textInfo_xs}>AT680FD</Text>
-                        <Text style={styles.textInfo_xs}>DBM Putty 10.0 CC</Text>
-                        <Text style={styles.textInfo_xs}>23/03/2025</Text>
-                        <Text style={styles.textInfo_xs}>LET28033345-17</Text>
+                    <View style={styles.mainView}>
+                        <View style={styles.itemRow}>
+                            <Text style={styles.textInfo_xs1}>AT680FD</Text>
+                            <Text style={styles.textInfo_xs2}>DBM Putty 10.0 CC</Text>
+                            <Text style={styles.textInfo_xs3}>LET28033345-17</Text>
+                            <Text style={styles.textInfo_xs4}>23/03/2025</Text>
+                        </View>
+                        <View style={styles.itemRow}>
+                            <Text style={styles.textInfo_xs1}>AT680FD</Text>
+                            <Text style={styles.textInfo_xs2}>DBM Putty 10.0 CC</Text>
+                            <Text style={styles.textInfo_xs3}>MORA32727425-28</Text>
+                            <Text style={styles.textInfo_xs4}>25/07/2025</Text>
+                        </View>
+                        <View style={styles.itemRow}>
+                            <Text style={styles.textInfo_xs1}>AT680FD</Text>
+                            <Text style={styles.textInfo_xs2}>DBM Putty 10.0 CC</Text>
+                            <Text style={styles.textInfo_xs3}>MORA32727425-29</Text>
+                            <Text style={styles.textInfo_xs4}>25/07/2025</Text>
+                        </View>
+                        <View>
+                            <Text>Logo Ness</Text>
+                            <Text>Total Items</Text>
+                            <Text>Cuadro Firma</Text>
+                        </View>
                     </View>
-                    <View style={styles.itemRow}>
-                        <Text style={styles.textInfo_xs}>AT680FD</Text>
-                        <Text style={styles.textInfo_xs}>DBM Putty 10.0 CC</Text>
-                        <Text style={styles.textInfo_xs}>25/07/2025</Text>
-                        <Text style={styles.textInfo_xs}>MORA32727425-28</Text>
-                    </View>
-                    <View style={styles.itemRow}>
-                        <Text style={styles.textInfo_xs}>AT680FD</Text>
-                        <Text style={styles.textInfo_xs}>DBM Putty 10.0 CC</Text>
-                        <Text style={styles.textInfo_xs}>25/07/2025</Text>
-                        <Text style={styles.textInfo_xs}>MORA32727425-29</Text>
+                    <View style={styles.divider} />
+                    <View>
+                        <Text style={styles.textFooter}>Calle 5 # 66B - 75 Ofc. 208, Centro Empresarial Limonar  Tel. (602) 345-1906</Text>
+                        <Text style={styles.textFooter}>Cali - Valle</Text>
                     </View>
                 </Page>
             </Document>

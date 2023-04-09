@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         color: 'black',
         fontFamily: 'Outfit',
-        padding: 40
+        padding: '40px 40px 30px'
     },
     textTitle_s: {
         fontSize: 10,
@@ -40,14 +40,19 @@ const styles = StyleSheet.create({
         fontSize: 17,
         fontWeight: 'medium'
     },
-    textInfo_xs: {
+    /* textInfo_xs: {
         fontSize: 9
-    },
+    }, */
     textInfo_s: {
         fontSize: 10
     },
     textInfo_m: {
         fontSize: 11
+    },
+    textFooter: {
+        fontSize: 10,
+        color: '#777777',
+        textAlign: 'center'
     },
     header: {
         display: 'flex',
@@ -93,11 +98,48 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        marginBottom: 13
+        marginBottom: 8
     },
-    itemColumn: {
-        flexBasis: '8%'
+    textTitle_s1: {
+        fontSize: 10,
+        color: '#777777',
+        flexBasis: '13%'
     },
+    textTitle_s2: {
+        fontSize: 10,
+        color: '#777777',
+        flexBasis: '35%'
+    },
+    textTitle_s3: {
+        fontSize: 10,
+        color: '#777777',
+        flexBasis: '18%'
+    },
+    textTitle_s4: {
+        fontSize: 10,
+        color: '#777777',
+        flexBasis: '18%'
+    },
+    textInfo_xs1: {
+        fontSize: 9,
+        flexBasis: '13%'
+    },
+    textInfo_xs2: {
+        fontSize: 9,
+        flexBasis: '35%'
+    },
+    textInfo_xs3: {
+        fontSize: 9,
+        flexBasis: '18%'
+    },
+    textInfo_xs4: {
+        fontSize: 9,
+        flexBasis: '18%',
+        textAlign: 'right'
+    },
+    mainView: {
+        height: '67%'
+    }
 });
 
 export default styles
