@@ -71,11 +71,11 @@ const Remision = () => {
                             <Text style={styles.textInfo_xs3}>MORA32727425-29</Text>
                             <Text style={styles.textInfo_xs4}>25/07/2025</Text>
                         </View>
-                        <View>
-                            <Text>Logo Ness</Text>
-                            <Text>Total Items</Text>
-                            <Text>Cuadro Firma</Text>
-                        </View>
+                    </View>
+                    <View style={styles.preFooter}>
+                        <Text>Logo Ness</Text>
+                        <Text>Total Items</Text>
+                        <Text>Cuadro Firma</Text>
                     </View>
                     <View style={styles.divider} />
                     <View>

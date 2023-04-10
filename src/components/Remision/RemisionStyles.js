@@ -138,7 +138,12 @@ const styles = StyleSheet.create({
         textAlign: 'right'
     },
     mainView: {
-        height: '67%'
+        height: '65%'
+    },
+    preFooter: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around'
     }
 });
 
