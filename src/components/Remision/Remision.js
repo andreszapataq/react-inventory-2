@@ -1,5 +1,6 @@
 import { PDFViewer, Document, Page, View, Text } from '@react-pdf/renderer';
 import LogoVive from '../Icons/Logo/LogoVive'
+import LogoNess from '../Icons/Logo/LogoNess'
 import styles from './RemisionStyles';
 
 const Remision = () => {
@@ -73,7 +74,7 @@ const Remision = () => {
                         </View>
                     </View>
                     <View style={styles.preFooter}>
-                        <Text>Logo Ness</Text>
+                        <LogoNess />
                         <Text>Total Items</Text>
                         <Text>Cuadro Firma</Text>
                     </View>
