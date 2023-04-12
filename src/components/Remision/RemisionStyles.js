@@ -138,12 +138,19 @@ const styles = StyleSheet.create({
         textAlign: 'right'
     },
     mainView: {
-        height: '65%'
+        height: '52%'
     },
     preFooter: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-around'
+        justifyContent: 'space-between',
+        alignItems: 'flex-end',
+        marginBottom: 13
+    },
+    signatureBox: {
+        width: 224,
+        height: 98,
+        border: '1px solid #777777'
     }
 });
 
