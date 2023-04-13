@@ -74,10 +74,13 @@ const Remision = () => {
                         </View>
                     </View>
                     <View style={styles.preFooter}>
-                        <LogoNess />
+                        <View style={styles.poweredBy}>
+                            <Text style={styles.textTitle_xs}>Powered by</Text>
+                            <LogoNess />
+                        </View>
                         <Text style={styles.textTitle_s}>Total Items</Text>
                         <View style={styles.signatureBox}>
-                            
+
                         </View>
                     </View>
                     <View style={styles.divider} />

@@ -7,6 +7,10 @@ Font.register({
             src: 'https://fonts.gstatic.com/s/outfit/v10/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4G-EiAou6Y.ttf'
         },
         {
+            src: 'https://fonts.gstatic.com/s/outfit/v10/QGYyz_MVcBeNP4NjuGObqx1XmO1I4bC1C4G-EiAou6Y.ttf',
+            fontWeight: 'extralight'
+        },
+        {
             src: 'https://fonts.gstatic.com/s/outfit/v10/QGYyz_MVcBeNP4NjuGObqx1XmO1I4W61C4G-EiAou6Y.ttf',
             fontWeight: 'light'
         },
@@ -27,6 +31,12 @@ const styles = StyleSheet.create({
         color: 'black',
         fontFamily: 'Outfit',
         padding: '40px 40px 30px'
+    },
+    textTitle_xs: {
+        fontSize: 7,
+        fontWeight: 'extralight',
+        color: '#B5B5B5',
+        marginBottom: 2
     },
     textTitle_s: {
         fontSize: 10,
@@ -147,10 +157,15 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end',
         marginBottom: 13
     },
+    poweredBy: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+    },
     signatureBox: {
         width: 224,
         height: 98,
-        border: '1px solid #777777'
+        border: '0.5px solid #777777'
     }
 });
 
