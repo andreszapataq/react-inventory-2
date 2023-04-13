@@ -53,6 +53,11 @@ const styles = StyleSheet.create({
     /* textInfo_xs: {
         fontSize: 9
     }, */
+    textInfo_xs: {
+        fontSize: 5,
+        fontWeight: 'light',
+        color: '#777777',
+    },
     textInfo_s: {
         fontSize: 10
     },
@@ -162,10 +167,41 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center'
     },
+    totalItems: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    totalItemsCircle: {
+        width: 17.8,
+        height: 17.8,
+        border: '0.5px solid #777777',
+        borderRadius: '50%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     signatureBox: {
         width: 224,
         height: 98,
-        border: '0.5px solid #777777'
+        border: '0.5px solid #777777',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between'
+    },
+    signatureBoxTitle: {
+        width: '100%',
+        height: 22.6,
+        display: 'flex',
+        flexDirection: 'row',
+        padding: '0 5px',
+        alignItems: 'center',
+        backgroundColor: '#EBEBEB'
+    },
+    signatureBoxDate: {
+        display: 'flex',
+        flexDirection: 'column',
+        padding: '2px 5px',
     }
 });
 

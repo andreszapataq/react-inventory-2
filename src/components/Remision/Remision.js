@@ -78,9 +78,20 @@ const Remision = () => {
                             <Text style={styles.textTitle_xs}>Powered by</Text>
                             <LogoNess />
                         </View>
-                        <Text style={styles.textTitle_s}>Total Items</Text>
+                        <View style={styles.totalItems}>
+                            <Text style={styles.textTitle_s}>Total Items</Text>
+                            <View style={styles.totalItemsCircle}>
+                                <Text style={styles.textInfo_s}>3</Text>
+                            </View>
+                        </View>
                         <View style={styles.signatureBox}>
-
+                            <View style={styles.signatureBoxTitle}>
+                                <Text style={styles.textTitle_s}>Firma y sello de recibido a satisfacción</Text>
+                            </View>
+                            <View style={styles.signatureBoxDate}>
+                                <Text style={styles.textTitle_s}>Fecha:</Text>
+                                <Text style={styles.textInfo_xs}>Acepto el contenido de la presente remisión y hago constar el recibido de la mercancía en ella discriminada.</Text>
+                            </View>
                         </View>
                     </View>
                     <View style={styles.divider} />
