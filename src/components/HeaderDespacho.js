@@ -9,6 +9,8 @@ const HeaderDespacho = ({nombre_bodega, cliente, id_number}) => {
     setReverse(!reverse)
   }
 
+  console.log(cliente)
+
   return (
     <div className='grid grid-cols-3'>
       <div className={`w-[428px] ${reverse ? "order-last justify-self-end" : "order-first"}`}>
