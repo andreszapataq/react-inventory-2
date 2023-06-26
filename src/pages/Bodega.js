@@ -7,8 +7,6 @@ function Bodega({inventarios}) {
   const bodegaInventario = location.state?.bodega?.stock
   const bodega = location.state?.bodega
 
-  console.log(bodega)
-
   return (
     <ItemContainer>
       {bodegaInventario.map((referencia, index) => (
