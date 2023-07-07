@@ -2,7 +2,7 @@ import { useLocation, Link } from "react-router-dom"
 import ItemContainer from "../components/ItemContainer"
 import ItemRow from "../components/ItemRow"
 
-function Bodega({inventarios}) {
+function Bodega() {
   let location = useLocation()
   const bodegaInventario = location.state?.bodega?.stock
   const bodega = location.state?.bodega
