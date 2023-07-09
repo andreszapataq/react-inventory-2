@@ -12,7 +12,7 @@ const ItemRow = ({referencia, lote}) => {
             <p className="text-xs font-light">{referencia.codigo}</p>
           </div>
           <div className="flex justify-end items-center">
-            <div className="h-12 w-px bg-green-300 mr-8"></div>
+            <div className="h-12 w-px bg-carrot-orange mr-8"></div>
             <div className="flex flex-col items-center w-16">
               <p className="text-xl font-semibold">{referencia.cantidad}</p>
               <p className="text-xs font-light">Unidades</p>
